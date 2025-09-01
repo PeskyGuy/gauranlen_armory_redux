@@ -5,3 +5,10 @@ E:\SteamLibrary\steamapps\common\RimWorld\Mods\Pesky's Gauranlen Armory Redux\1.
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\Pesky's Gauranlen Armory Redux\1.6\Source\obj\Debug\PeskysGauranlenArmoryRedux.csproj.CoreCompileInputs.cache
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\Pesky's Gauranlen Armory Redux\1.6\Assemblies\PeskysGauranlenArmoryRedux.dll
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\Pesky's Gauranlen Armory Redux\1.6\Source\obj\Debug\PeskysGauranlenArmoryRedux.dll
+E:\Local Repos\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.csproj.AssemblyReference.cache
+E:\Local Repos\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.GeneratedMSBuildEditorConfig.editorconfig
+E:\Local Repos\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.AssemblyInfoInputs.cache
+E:\Local Repos\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.AssemblyInfo.cs
+E:\Local Repos\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.csproj.CoreCompileInputs.cache
+E:\Local Repos\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.dll
+E:\Local Repos\gauranlen_armory_redux\1.6\Assemblies\PeskysGauranlenArmoryRedux.dll
