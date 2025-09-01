@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\Pesky's Gauranlen Armory Redux\\1.6\\Source\\PeskysGauranlenArmoryRedux.csproj": {}
+    "E:\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj": {}
   },
   "projects": {
-    "E:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\Pesky's Gauranlen Armory Redux\\1.6\\Source\\PeskysGauranlenArmoryRedux.csproj": {
+    "E:\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\Pesky's Gauranlen Armory Redux\\1.6\\Source\\PeskysGauranlenArmoryRedux.csproj",
+        "projectUniqueName": "E:\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
         "projectName": "PeskysGauranlenArmoryRedux",
-        "projectPath": "E:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\Pesky's Gauranlen Armory Redux\\1.6\\Source\\PeskysGauranlenArmoryRedux.csproj",
+        "projectPath": "E:\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
         "packagesPath": "C:\\Users\\Xander\\.nuget\\packages\\",
-        "outputPath": "E:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\Pesky's Gauranlen Armory Redux\\1.6\\Source\\obj\\",
+        "outputPath": "E:\\Local Repos\\gauranlen_armory_redux\\Source\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Xander\\AppData\\Roaming\\NuGet\\NuGet.Config"
