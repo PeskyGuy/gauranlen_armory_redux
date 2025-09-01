@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<GauranlenTreeModeDef>
+    <defName>Sunkeeper</defName>
+    <label>sunkeeper</label>
+    <description>A small, weak caste of dryad which specializes in creating electricity from the sun. This dryad can connect to power lines and help produce power during the day, they can stay in this state for 30 days.</description>
+    <drawPosition>(1, 1)</drawPosition>
+    <pawnKindDef>Dryad_Sunkeeper</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>Dryad_Sunkeeper</ThingDef>
+    </hyperlinks>
+  </GauranlenTreeModeDef>
+</Defs>

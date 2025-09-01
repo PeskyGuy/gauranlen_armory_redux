@@ -1,0 +1,7 @@
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Pesky's Gauranlen Armory Redux\1.6\Source\obj\Debug\PeskysGauranlenArmoryRedux.csproj.AssemblyReference.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Pesky's Gauranlen Armory Redux\1.6\Source\obj\Debug\PeskysGauranlenArmoryRedux.GeneratedMSBuildEditorConfig.editorconfig
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Pesky's Gauranlen Armory Redux\1.6\Source\obj\Debug\PeskysGauranlenArmoryRedux.AssemblyInfoInputs.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Pesky's Gauranlen Armory Redux\1.6\Source\obj\Debug\PeskysGauranlenArmoryRedux.AssemblyInfo.cs
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Pesky's Gauranlen Armory Redux\1.6\Source\obj\Debug\PeskysGauranlenArmoryRedux.csproj.CoreCompileInputs.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Pesky's Gauranlen Armory Redux\1.6\Assemblies\PeskysGauranlenArmoryRedux.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\Pesky's Gauranlen Armory Redux\1.6\Source\obj\Debug\PeskysGauranlenArmoryRedux.dll
