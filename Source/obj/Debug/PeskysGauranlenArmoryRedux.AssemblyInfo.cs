@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PeskysGauranlenArmoryRedux")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7d1fe5b2f6886fc4f4d121054662d411d6bd86c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f23f25abee02087aeb9c34753ebb1a36b16445a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("PeskysGauranlenArmoryRedux")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PeskysGauranlenArmoryRedux")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

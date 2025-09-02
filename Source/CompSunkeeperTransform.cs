@@ -34,7 +34,6 @@ namespace Pesky
         {
             base.CompTick();
             
-            // Only tick down cooldown timer
             if (cooldownTicksRemaining > 0)
             {
                 cooldownTicksRemaining--;
@@ -122,10 +121,9 @@ namespace Pesky
         
         public void OnBuildingDestroyed()
         {
-            // Called when the building is destroyed - reset state with cooldown penalty
             isTransformed = false;
             transformedBuilding = null;
-            cooldownTicksRemaining = Props.cooldownTicks; // Apply full cooldown penalty
+            cooldownTicksRemaining = Props.cooldownTicks;
         }
         
         public override void PostExposeData()
@@ -167,16 +165,13 @@ namespace Pesky
         {
             base.PostDestroy(mode, previousMap);
             
-            // If the building is destroyed, spawn the dryad back
             if (originalPawn != null && previousMap != null)
             {
                 CompSunkeeperTransform transformComp = originalPawn.GetComp<CompSunkeeperTransform>();
                 if (transformComp != null)
                 {
-                    // Reset the transform state
                     transformComp.OnBuildingDestroyed();
                     
-                    // Spawn the dryad at the building's position
                     IntVec3 spawnPos = parent.Position;
                     GenSpawn.Spawn(originalPawn, spawnPos, previousMap);
                 }

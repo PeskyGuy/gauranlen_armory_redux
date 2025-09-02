@@ -46,4 +46,49 @@
     <displayPriority>10</displayPriority>
   </RecipeDef>
 
+<RecipeDef>
+    <defName>Make_ComponentDryadSunkeeper</defName>
+    <label>make sunkeeper essence</label>
+    <description>Make an sunkeeper essence.</description>
+    <jobString>Making sunkeeper essence.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Dryad_Sunkeeper</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Dryad_Basic</li>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentDryad_Basic>1</ComponentDryad_Basic>
+    </products>
+    <researchPrerequisite>Dryadic Essence</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <displayPriority>10</displayPriority>
+  </RecipeDef>
+
 </Defs>
