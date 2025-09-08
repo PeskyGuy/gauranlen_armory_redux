@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- Dryad Stuff-->
+
 <ThingDef ParentName="BuildingBase">
     <defName>SolarDryadPod</defName>
     <label>solar dryad pod</label>
@@ -51,4 +53,59 @@
     <designationHotKey>Misc5</designationHotKey>
     <constructEffect>ConstructMetal</constructEffect>
   </ThingDef>
+
+<!-- Research Stuff -->
+
+ <ThingDef ParentName="BuildingBase">
+    <defName>Gau_Symbiont</defName>
+    <label>gauranlen symbiont</label>
+    <description>A half-dead immature dryad that attaches to a log and unlocks new dryadic technology, it speaks to you.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/GauSymbiont</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <uiIconScale>0.85</uiIconScale>
+    <researchPrerequisites><li>Rootcrafting</li></researchPrerequisites>
+    <size>(2,2)</size>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <designationHotKey>Misc4</designationHotKey>
+    <designationCategory>Misc</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <canOverlapZones>false</canOverlapZones>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>60</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costList>
+      <WoodLog>40</WoodLog>
+      <Jade>20</Jade>
+      <ComponentDryad_Basic>2</ComponentDryad_Basic>
+    </costList>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <ResearchSpeedFactor>0.05</ResearchSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+  </ThingDef>
+
 </Defs>

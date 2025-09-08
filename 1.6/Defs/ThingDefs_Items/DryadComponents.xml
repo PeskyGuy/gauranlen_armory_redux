@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- Immature Dryad -->
+
 <ThingDef ParentName="ResourceBase">
     <defName>ComponentDryad_Basic</defName>
     <label>immature dryadic essence</label>
@@ -15,7 +17,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>40</MaxHitPoints>
-      <MarketValue>200</MarketValue>
+      <MarketValue>50</MarketValue>
       <Mass>0.6</Mass>
       <Flammability>0.6</Flammability>
       <DeteriorationRate>2.0</DeteriorationRate>
@@ -31,12 +33,78 @@
     <allowedArchonexusCount>5</allowedArchonexusCount>
   </ThingDef>
 
+<!-- Carrier Dryad -->
+
 <ThingDef ParentName="ResourceBase">
-    <defName>ComponentDryad_Sunkeeper</defName>
-    <label>sunkeeper dryadic essence</label>
-    <description>The essence of a fallen sunkeeper dryad, made from the parts of its corpse.</description>
+<defName>ComponentDryad_Carrier</defName>
+    <label>carrier dryadic essence</label>
+    <description>The essence of a fallen carrier dryad, made from the parts of its corpse.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentDryad_Sunkeeper</texPath>
+      <texPath>Things/Item/Resource/ComponentDryad_Carrier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>100</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+</ThingDef>
+
+<!-- Clawer Dryad -->
+
+<ThingDef ParentName="ResourceBase">
+<defName>ComponentDryad_Clawer</defName>
+    <label>clawer dryadic essence</label>
+    <description>The essence of a fallen clawer dryad, made from the parts of its corpse.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Clawer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>150</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+</ThingDef>
+
+<!-- Barkskin Dryad -->
+
+<ThingDef ParentName="ResourceBase">
+<defName>ComponentDryad_Barkskin</defName>
+    <label>barkskin dryadic essence</label>
+    <description>The essence of a fallen barkskin dryad, made from the parts of its corpse.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Barkskin</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -59,6 +127,103 @@
     </tradeTags>
     <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
     <allowedArchonexusCount>5</allowedArchonexusCount>
-  </ThingDef>
+</ThingDef>
+
+<!-- Woodmaker Dryad -->
+
+<ThingDef ParentName="ResourceBase">
+<defName>ComponentDryad_Woodmaker</defName>
+    <label>woodmaker dryadic essence</label>
+    <description>The essence of a fallen woodmaker dryad, made from the parts of its corpse.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Woodmaker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>200</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+</ThingDef>
+
+<!-- Medicinemaker Dryad -->
+
+<ThingDef ParentName="ResourceBase">
+<defName>ComponentDryad_Medicinemaker</defName>
+    <label>medicinemaker dryadic essence</label>
+    <description>The essence of a fallen medicinemaker dryad, made from the parts of its corpse.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Medicinemaker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>250</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+</ThingDef>
+
+<!-- Gaumaker Dryad -->
+
+<ThingDef ParentName="ResourceBase">
+<defName>ComponentDryad_Gaumaker</defName>
+    <label>gaumaker dryadic essence</label>
+    <description>The essence of a fallen gaumaker dryad, made from the parts of its corpse.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Gaumaker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>300</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+</ThingDef>
+
 
 </Defs>

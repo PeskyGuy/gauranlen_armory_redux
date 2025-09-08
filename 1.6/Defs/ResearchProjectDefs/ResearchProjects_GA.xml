@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ResearchProjectDef>
+    <defName>Rootcrafting</defName>
+    <label>rootcrafting</label>
+    <description>Repurpose the fallen corpses of dryads from gauranlen trees.</description>
+    <baseCost>600</baseCost>
+    <tab>Dryadtech</tab>
+    <techLevel>Neolithic</techLevel>
+    <requiredResearchFacilities>
+      <li>Gau_Symbiont</li>
+    </requiredResearchFacilities>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+    <discoveredLetterTitle>About: Getting Essences</discoveredLetterTitle>
+    <discoveredLetterText>You now have the knowledge to create essences and repurpose fallen dryads. To get started:\n\n  Some tribal outposts sell essences. Send a caravan to buy some.\n  -Some visiting traders sell these essences. Invite or wait for them.</discoveredLetterText>
+  </ResearchProjectDef>
+
+</Defs>

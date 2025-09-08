@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+<!-- Sunkeeper Dryad -->
+
 <ThingDef ParentName="DryadBase">
     <defName>Dryad_Sunkeeper</defName>
     <label>sunkeeper dryad</label>
     <description>A small, weak caste of dryad which specializes in creating electricity from the sun. This dryad can transform into a solar pod and generate power for 15 days.</description>
     <statBases>
-      <MoveSpeed>1</MoveSpeed>
+      <MoveSpeed>0.80</MoveSpeed>
     </statBases>
     <uiIconScale>1.25</uiIconScale>
     <descriptionHyperlinks>
@@ -48,6 +51,58 @@
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dryad_Sunkeeper/Dessicated_DryadSunkeeper</texPath>
           <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!-- Firemaker Dryad -->
+
+<ThingDef ParentName="DryadBase">
+    <defName>Dryad_Firemaker</defName>
+    <label>firemaker dryad</label>
+    <description>A medium sized caste of dryad which specializes in producing chemfuel from nodules on its back, similar to a boomalope it also explodes on death. This dryad produces chemfuel every 10 days.</description>
+    <statBases>
+      <MoveSpeed>1.20</MoveSpeed>
+    </statBases>
+    <uiIconScale>1.25</uiIconScale>
+    <descriptionHyperlinks>
+      <ThingDef>SolarDryadPod</ThingDef>
+    </descriptionHyperlinks>
+    <race>
+      <useMeatFrom>Dryad_Basic</useMeatFrom>
+      <deathAction>
+        <workerClass>DeathActionWorker_BigExplosion</workerClass>
+      </deathAction>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <soundWounded>Pawn_Boomrat_Wounded</soundWounded>
+          <soundCall>Pawn_Boomrat_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.18)</li>
+        <li>(0.22, 0, 0.08)</li>
+        <li>(0, 0, 0.05)</li>
+        <li>(-0.22, 0, 0.08)</li>
+      </headPosPerRotation>
+    </race>
+  </ThingDef>
+
+<PawnKindDef ParentName="DryadKindBase">
+    <defName>Dryad_Firemaker</defName>
+    <label>firemaker dryad</label>
+    <race>Dryad_Firemaker</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dryad_Sunkeeper/DryadFiremaker</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dryad_Sunkeeper/Dessicated_DryadFiremaker</texPath>
+          <drawSize>1.1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
