@@ -106,11 +106,11 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Dryad_Sunkeeper/DryadFiremaker</texPath>
+          <texPath>Things/Pawn/Animal/Dryad_Firemaker/DryadFiremaker</texPath>
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Dryad_Sunkeeper/Dessicated_DryadFiremaker</texPath>
+          <texPath>Things/Pawn/Animal/Dryad_Firemaker/Dessicated_DryadFiremaker</texPath>
           <drawSize>1.1</drawSize>
         </dessicatedBodyGraphicData>
       </li>

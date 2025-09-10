@@ -90,7 +90,7 @@
     <costList>
       <WoodLog>40</WoodLog>
       <Jade>20</Jade>
-      <ComponentDryad_Basic>2</ComponentDryad_Basic>
+      <ComponentDryad_Basic>3</ComponentDryad_Basic>
     </costList>
     <building>
       <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
