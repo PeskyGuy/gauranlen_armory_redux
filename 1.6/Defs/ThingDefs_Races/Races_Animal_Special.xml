@@ -65,9 +65,18 @@
     <statBases>
       <MoveSpeed>1.20</MoveSpeed>
     </statBases>
+     <comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Chemfuel</milkDef>
+        <milkIntervalDays>1</milkIntervalDays>
+        <milkAmount>11</milkAmount>
+        <milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+    </comps>
+    <race>
     <uiIconScale>1.25</uiIconScale>
     <descriptionHyperlinks>
-      <ThingDef>SolarDryadPod</ThingDef>
+      <ThingDef>Chemfuel</ThingDef>
     </descriptionHyperlinks>
     <race>
       <useMeatFrom>Dryad_Basic</useMeatFrom>

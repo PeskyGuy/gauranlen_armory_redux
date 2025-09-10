@@ -1,6 +1,129 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs MayRequire="vanillaexpanded.ideo.dryads">
 
+<!-- Gaubricmaker Dryad -->
 
+<ThingDef ParentName="ResourceBase">
+    <defName>ComponentDryad_Gaubricmaker</defName>
+    <label>fibrous dryadic essence</label>
+    <description>The essence of a fallen gaubricmaker dryad, made from the parts of its corpse.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Gaubricmaker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>100</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+  </ThingDef>
+
+<!-- Stonedigger Dryad -->
+<ThingDef ParentName="ResourceBase">
+    <defName>ComponentDryad_Stonedigger</defName>
+    <label>stony dryadic essence</label>
+    <description>The essence of a fallen stonedigger dryad, made from the parts of its corpse. Contains traces of mineral compounds.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Stonedigger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>150</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+</ThingDef>
+
+<!-- Spitter Dryad -->
+<ThingDef ParentName="ResourceBase">
+    <defName>ComponentDryad_Spitter</defName>
+    <label>acidic dryadic essence</label>
+    <description>The essence of a fallen spitter dryad, made from the parts of its corpse. Contains corrosive compounds.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Spitter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>200</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+</ThingDef>
+
+<!-- Nectarmaker Dryad -->
+<ThingDef ParentName="ResourceBase">
+    <defName>ComponentDryad_Nectarmaker</defName>
+    <label>sweet dryadic essence</label>
+    <description>The essence of a fallen nectarmaker dryad, made from the parts of its corpse. Has a pleasant aroma.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Nectarmaker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>250</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+</ThingDef>
 
 </Defs>

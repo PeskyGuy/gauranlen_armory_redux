@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- Inefficient Recipes (Butcher Table) -->
-
 <!-- Immature Dryad -->
 
 <RecipeDef>
@@ -290,10 +288,5 @@
     <workSkill>Plants</workSkill>
     <displayPriority>10</displayPriority>
   </RecipeDef>
-
-
-<!-- Efficient Recipes (Grove Crucible) -->
-
-
 
 </Defs>

@@ -5,7 +5,7 @@
 
 <ThingDef ParentName="ResourceBase">
     <defName>ComponentDryad_Sunkeeper</defName>
-    <label>sunkeeper dryadic essence</label>
+    <label>bright dryadic essence</label>
     <description>The essence of a fallen sunkeeper dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Sunkeeper</texPath>
@@ -33,6 +33,132 @@
     <allowedArchonexusCount>5</allowedArchonexusCount>
   </ThingDef>
 
-  
+<!-- Firemaker Dryad -->
+
+<ThingDef ParentName="ResourceBase">
+    <defName>ComponentDryad_Firemaker</defName>
+    <label>flaming dryadic essence</label>
+    <description>The essence of a fallen firemaker dryad, made from the parts of its corpse.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Firemaker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>200</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+  </ThingDef>
+
+<!-- Ironback Dryad -->
+
+<ThingDef ParentName="ResourceBase">
+    <defName>ComponentDryad_Ironback</defName>
+    <label>wrought dryadic essence</label>
+    <description>The essence of a fallen ironback dryad, made from the parts of its corpse.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Ironback</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>200</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+  </ThingDef>
+
+<!-- Bloodmaker Dryad -->
+
+<ThingDef ParentName="ResourceBase" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>ComponentDryad_Bloodmaker</defName>
+    <label>bloody dryadic essence</label>
+    <description>The essence of a fallen bloodmaker dryad, made from the parts of its corpse.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Bloodmaker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>200</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+  </ThingDef>
+
+<!-- Ferritemaker Dryad -->
+
+<ThingDef ParentName="ResourceBase" MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>ComponentDryad_Ferritemaker</defName>
+    <label>ferrous dryadic essence</label>
+    <description>The essence of a fallen ferritemaker dryad, made from the parts of its corpse.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Ferritemaker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>200</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+  </ThingDef>
 
   </Defs>

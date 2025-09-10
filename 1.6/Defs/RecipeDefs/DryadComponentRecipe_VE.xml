@@ -1,6 +1,193 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Defs MayRequire="vanillaexpanded.ideo.dryads">
 
+<!-- Gaubricmaker Dryad -->
 
+<RecipeDef>
+    <defName>Make_ComponentDryadGaubricmaker</defName>
+    <label>make fibrous essence</label>
+    <description>Make a fibrous essence.</description>
+    <jobString>Making fibrous essence.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Dryad_Gaubricmaker</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Dryad_Gaubricmaker</li>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentDryad_Firemaker>1</ComponentDryad_Firemaker>
+    </products>
+    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+      <Plants>8</Plants>
+    </skillRequirements>
+    <workSkill>Plants</workSkill>
+    <displayPriority>10</displayPriority>
+  </RecipeDef>
+
+<!-- Stonedigger Dryad -->
+<RecipeDef>
+    <defName>Make_ComponentDryadStonedigger</defName>
+    <label>make stony essence</label>
+    <description>Make a stony essence.</description>
+    <jobString>Making stony essence.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Dryad_Stonedigger</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Dryad_Stonedigger</li>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentDryad_Stonedigger>1</ComponentDryad_Stonedigger>
+    </products>
+    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+      <Plants>8</Plants>
+    </skillRequirements>
+    <workSkill>Plants</workSkill>
+    <displayPriority>10</displayPriority>
+</RecipeDef>
+
+<!-- Spitter Dryad -->
+<RecipeDef>
+    <defName>Make_ComponentDryadSpitter</defName>
+    <label>make acidic essence</label>
+    <description>Make an acidic essence.</description>
+    <jobString>Making acidic essence.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Dryad_Spitter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Dryad_Spitter</li>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentDryad_Spitter>1</ComponentDryad_Spitter>
+    </products>
+    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+      <Plants>8</Plants>
+    </skillRequirements>
+    <workSkill>Plants</workSkill>
+    <displayPriority>10</displayPriority>
+</RecipeDef>
+
+<!-- Nectarmaker Dryad -->
+<RecipeDef>
+    <defName>Make_ComponentDryadNectarmaker</defName>
+    <label>make sweet essence</label>
+    <description>Make a sweet essence.</description>
+    <jobString>Making sweet essence.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Dryad_Nectarmaker</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Dryad_Nectarmaker</li>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentDryad_Nectarmaker>1</ComponentDryad_Nectarmaker>
+    </products>
+    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+      <Plants>8</Plants>
+    </skillRequirements>
+    <workSkill>Plants</workSkill>
+    <displayPriority>10</displayPriority>
+</RecipeDef>
 
 </Defs>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- Sunkeeper Dryad -->
+
 <RecipeDef>
     <defName>Make_ComponentDryadSunkeeper</defName>
     <label>make sunkeeper essence</label>
@@ -36,7 +38,199 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <ComponentDryad_Basic>1</ComponentDryad_Basic>
+      <ComponentDryad_Sunkeeper>1</ComponentDryad_Sunkeeper>
+    </products>
+    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+      <Plants>8</Plants>
+    </skillRequirements>
+    <workSkill>Plants</workSkill>
+    <displayPriority>10</displayPriority>
+  </RecipeDef>
+
+<!-- Firemaker Dryad -->
+
+<RecipeDef>
+    <defName>Make_ComponentDryadFiremaker</defName>
+    <label>make firemaker essence</label>
+    <description>Make a firemaker essence.</description>
+    <jobString>Making firemaker essence.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Dryad_Firemaker</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Dryad_Firemaker</li>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentDryad_Firemaker>1</ComponentDryad_Firemaker>
+    </products>
+    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+      <Plants>8</Plants>
+    </skillRequirements>
+    <workSkill>Plants</workSkill>
+    <displayPriority>10</displayPriority>
+  </RecipeDef>
+
+<!-- Ironback Dryad -->
+
+<RecipeDef>
+    <defName>Make_ComponentDryadIronback</defName>
+    <label>make ironback essence</label>
+    <description>Make an ironback essence.</description>
+    <jobString>Making ironback essence.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Dryad_Ironback</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Dryad_Ironback</li>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentDryad_Ironback>1</ComponentDryad_Ironback>
+    </products>
+    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+      <Plants>8</Plants>
+    </skillRequirements>
+    <workSkill>Plants</workSkill>
+    <displayPriority>10</displayPriority>
+  </RecipeDef>
+
+<!-- Bloodmaker Dryad -->
+
+<RecipeDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Make_ComponentDryadBloodmaker</defName>
+    <label>make bloodmaker essence</label>
+    <description>Make a bloodmaker essence.</description>
+    <jobString>Making bloodmaker essence.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Dryad_Bloodmaker</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Dryad_Bloodmaker</li>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentDryad_Bloodmaker>1</ComponentDryad_Bloodmaker>
+    </products>
+    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+      <Plants>8</Plants>
+    </skillRequirements>
+    <workSkill>Plants</workSkill>
+    <displayPriority>10</displayPriority>
+  </RecipeDef>
+
+<!-- Ferritemaker Dryad -->
+
+<RecipeDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>Make_ComponentDryadFerritemaker</defName>
+    <label>make ferritemaker essence</label>
+    <description>Make a ferritemaker essence.</description>
+    <jobString>Making ferritemaker essence.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Corpse_Dryad_Ferritemaker</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Dryad_Ferritemaker</li>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentDryad_Ferritemaker>1</ComponentDryad_Ferritemaker>
     </products>
     <researchPrerequisite>Rootcrafting</researchPrerequisite>
     <skillRequirements>
