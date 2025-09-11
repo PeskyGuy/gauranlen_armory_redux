@@ -40,7 +40,7 @@
     <products>
       <ComponentDryad_Sunkeeper>1</ComponentDryad_Sunkeeper>
     </products>
-    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
       <Crafting>6</Crafting>
       <Plants>8</Plants>
@@ -88,7 +88,7 @@
     <products>
       <ComponentDryad_Firemaker>1</ComponentDryad_Firemaker>
     </products>
-    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
       <Crafting>6</Crafting>
       <Plants>8</Plants>
@@ -122,6 +122,7 @@
         <filter>
           <thingDefs>
             <li>WoodLog</li>
+            <li>Steel</li>
           </thingDefs>
         </filter>
         <count>20</count>
@@ -131,12 +132,13 @@
       <thingDefs>
         <li>Corpse_Dryad_Ironback</li>
         <li>WoodLog</li>
+        <li>Steel</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
       <ComponentDryad_Ironback>1</ComponentDryad_Ironback>
     </products>
-    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
       <Crafting>6</Crafting>
       <Plants>8</Plants>
@@ -170,6 +172,7 @@
         <filter>
           <thingDefs>
             <li>WoodLog</li>
+            <li>HemogenPack</li>           
           </thingDefs>
         </filter>
         <count>20</count>
@@ -179,12 +182,13 @@
       <thingDefs>
         <li>Corpse_Dryad_Bloodmaker</li>
         <li>WoodLog</li>
+        <li>HemogenPack</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
       <ComponentDryad_Bloodmaker>1</ComponentDryad_Bloodmaker>
     </products>
-    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
       <Crafting>6</Crafting>
       <Plants>8</Plants>
@@ -218,6 +222,7 @@
         <filter>
           <thingDefs>
             <li>WoodLog</li>
+            <li>Bioferrite</li>
           </thingDefs>
         </filter>
         <count>20</count>
@@ -227,12 +232,13 @@
       <thingDefs>
         <li>Corpse_Dryad_Ferritemaker</li>
         <li>WoodLog</li>
+        <li>Bioferrite</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
       <ComponentDryad_Ferritemaker>1</ComponentDryad_Ferritemaker>
     </products>
-    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
       <Crafting>6</Crafting>
       <Plants>8</Plants>

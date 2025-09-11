@@ -11,7 +11,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Gaubricmaker</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -42,7 +42,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Stonedigger</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -73,7 +73,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Spitter</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -104,7 +104,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Nectarmaker</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>

@@ -40,7 +40,7 @@
     <products>
       <ComponentDryad_Basic>1</ComponentDryad_Basic>
     </products>
-    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
       <Crafting>6</Crafting>
       <Plants>8</Plants>
@@ -88,7 +88,7 @@
     <products>
       <ComponentDryad_Carrier>1</ComponentDryad_Carrier>
     </products>
-    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
       <Crafting>6</Crafting>
       <Plants>8</Plants>
@@ -136,7 +136,7 @@
     <products>
       <ComponentDryad_Barkskin>1</ComponentDryad_Barkskin>
     </products>
-    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
       <Crafting>6</Crafting>
       <Plants>8</Plants>
@@ -184,7 +184,7 @@
     <products>
       <ComponentDryad_Woodmaker>1</ComponentDryad_Woodmaker>
     </products>
-    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
       <Crafting>6</Crafting>
       <Plants>8</Plants>
@@ -232,7 +232,7 @@
     <products>
       <ComponentDryad_Medicinemaker>1</ComponentDryad_Medicinemaker>
     </products>
-    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
       <Crafting>6</Crafting>
       <Plants>8</Plants>
@@ -280,7 +280,7 @@
     <products>
       <ComponentDryad_Gaumaker>1</ComponentDryad_Gaumaker>
     </products>
-    <researchPrerequisite>Rootcrafting</researchPrerequisite>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
       <Crafting>6</Crafting>
       <Plants>8</Plants>

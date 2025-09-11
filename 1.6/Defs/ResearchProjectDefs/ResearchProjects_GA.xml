@@ -1,20 +1,112 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ResearchProjectDef>
-    <defName>Rootcrafting</defName>
-    <label>rootcrafting</label>
-    <description>Repurpose the fallen corpses of dryads from gauranlen trees.</description>
-    <baseCost>600</baseCost>
-    <tab>Dryadtech</tab>
+  <!-- Rootcraft -->
+  <ResearchProjectDef>
+    <defName>Rootcraft</defName>
+    <label>rootcraft</label>
+    <description>Learn to process fallen dryads into useful essences and craft basic items from their remains. This ancient knowledge allows neolithic and medieval colonies to make use of dryadic materials without advanced technology.</description>
+    <baseCost>1200</baseCost>
     <techLevel>Neolithic</techLevel>
+    <tab>Dryadtech</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
     <requiredResearchFacilities>
       <li>Gau_Symbiont</li>
     </requiredResearchFacilities>
-    <researchViewX>1.00</researchViewX>
-    <researchViewY>1.00</researchViewY>
-    <discoveredLetterTitle>About: Getting Essences</discoveredLetterTitle>
-    <discoveredLetterText>You now have the knowledge to create essences and repurpose fallen dryads. To get started:\n\n  Some tribal outposts sell essences. Send a caravan to buy some.\n  -Some visiting traders sell these essences. Invite or wait for them.</discoveredLetterText>
+  </ResearchProjectDef>
+
+  <!-- Spagyric Alchemy -->
+  <ResearchProjectDef>
+    <defName>SpagyricAlchemy</defName>
+    <label>spagyric alchemy</label>
+    <description>Unlock the secrets of dryadic alchemy. Learn to brew potions and draughts from dryad essences that can enhance colonists' abilities, though often with risks and side effects.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Dryadtech</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>Rootcraft</li>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>Gau_Symbiont</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+
+  <!-- Grafting -->
+  <ResearchProjectDef>
+    <defName>Grafting</defName>
+    <label>essence grafting</label>
+    <description>Master the dangerous art of grafting dryadic essences directly into living tissue. This allows for permanent biological enhancements, but requires careful surgical procedures and carries significant risks.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Dryadtech</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>SpagyricAlchemy</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>Gau_Symbiont</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+
+  <!-- Dryadic Effigies -->
+  <ResearchProjectDef>
+    <defName>DryadicEffigies</defName>
+    <label>dryadic effigies</label>
+    <description>Learn to construct effigies from dryad corpses that can produce resources indefinitely. These macabre but efficient structures harness the lingering essence of fallen dryads to generate materials continuously.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>Dryadtech</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
+    <prerequisites>
+      <li>SpagyricAlchemy</li>
+      <li>Electricity</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>Gau_Symbiont</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+
+  <!-- Dryadic Armaments -->
+  <ResearchProjectDef>
+    <defName>DryadicArmaments</defName>
+    <label>dryadic armaments</label>
+    <description>Forge weapons and armor from dryadic essences, creating equipment that retains some of the mystical properties of the fallen dryads. These armaments often provide unique benefits beyond their material properties.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Dryadtech</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>Grafting</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>Gau_Symbiont</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+
+  <!-- Awakened Essences -->
+  <ResearchProjectDef MayRequire="vanillaexpanded.ideo.dryads">
+    <defName>AwakenedEssences</defName>
+    <label>awakened essences</label>
+    <description>Unlock the ultimate secrets of dryadic manipulation. Learn to work with awakened dryad essences to create incredibly powerful items and structures. This pinnacle of dryadtech requires mastery of all previous techniques and access to awakened dryads.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Dryadtech</tab>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2</researchViewY>
+    <prerequisites>
+      <li>DryadicEffigies</li>
+      <li>DryadicArmaments</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>Gau_Symbiont</li>
+    </requiredResearchFacilities>
   </ResearchProjectDef>
 
 </Defs>

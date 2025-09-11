@@ -34,7 +34,7 @@
       <Flammability>1.0</Flammability>
       <Cleanliness>-2</Cleanliness>
     </statBases>
-    <size>(2,1)</size>
+    <size>(3,1)</size>
     <designationCategory>Production</designationCategory>
     <uiOrder>2520</uiOrder>
     <passability>PassThroughOnly</passability>
@@ -86,7 +86,7 @@
     </building>
     <constructEffect>ConstructDirt</constructEffect>
     <researchPrerequisites>
-      <li>Rootcrafting</li>
+      <li>Rootcraft</li>
     </researchPrerequisites>
     <designationHotKey>Misc7</designationHotKey>
     <placeWorkers>

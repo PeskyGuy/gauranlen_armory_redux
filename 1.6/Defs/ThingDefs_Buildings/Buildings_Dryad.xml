@@ -66,8 +66,8 @@
       <drawSize>1</drawSize>
     </graphicData>
     <uiIconScale>0.85</uiIconScale>
-    <researchPrerequisites><li>Rootcrafting</li></researchPrerequisites>
-    <size>(2,2)</size>
+    <researchPrerequisites><li>Rootcraft</li></researchPrerequisites>
+    <size>(1,1)</size>
     <rotatable>true</rotatable>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -95,9 +95,10 @@
     <building>
       <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
     </building>
+    <comps>
       <li Class="CompProperties_Facility">
         <statOffsets>
-          <ResearchSpeedFactor>0.05</ResearchSpeedFactor>
+          <ResearchSpeedFactor>0.10</ResearchSpeedFactor>
         </statOffsets>
         <maxSimultaneous>1</maxSimultaneous>
       </li>

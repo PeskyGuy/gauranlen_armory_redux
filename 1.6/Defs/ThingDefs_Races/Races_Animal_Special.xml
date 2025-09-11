@@ -73,7 +73,6 @@
         <milkFemaleOnly>false</milkFemaleOnly>
       </li>
     </comps>
-    <race>
     <uiIconScale>1.25</uiIconScale>
     <descriptionHyperlinks>
       <ThingDef>Chemfuel</ThingDef>
@@ -116,5 +115,7 @@
       </li>
     </lifeStages>
   </PawnKindDef>
+
+<!-- Ironback Dryad -->
 
 </Defs>

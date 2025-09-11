@@ -11,7 +11,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Sunkeeper</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -43,7 +43,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Firemaker</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -75,7 +75,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Ironback</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -107,7 +107,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Bloodmaker</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -139,7 +139,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Ferritemaker</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+<!-- Sunkeeper Dryad -->
+
 <GauranlenTreeModeDef>
     <defName>Sunkeeper</defName>
     <label>sunkeeper</label>
@@ -14,4 +17,23 @@
       <ThingDef>Dryad_Sunkeeper</ThingDef>
     </hyperlinks>
   </GauranlenTreeModeDef>
+
+<!-- Firemaker Dryad -->
+
+<GauranlenTreeModeDef>
+    <defName>Firemaker</defName>
+    <label>firemaker</label>
+    <description>A small, weak caste of dryad which specializes in creating electricity from the sun. This dryad can connect to power lines and help produce power during the day, they can stay in this state for 30 days.</description>
+    <drawPosition>(1, 1)</drawPosition>
+    <pawnKindDef>Dryad_Firemaker</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>Dryad_Firemaker</ThingDef>
+      <ThingDef>Chemfuel</ThingDef>
+    </hyperlinks>
+  </GauranlenTreeModeDef>
+
 </Defs>

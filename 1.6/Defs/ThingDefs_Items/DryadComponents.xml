@@ -11,7 +11,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Basic</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -43,7 +43,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Carrier</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -75,7 +75,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Clawer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -107,7 +107,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Barkskin</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -139,7 +139,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Woodmaker</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -171,7 +171,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Medicinemaker</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -203,7 +203,7 @@
       <texPath>Things/Item/Resource/ComponentDryad_Gaumaker</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Metal_Drop</soundInteract>
+    <soundInteract>Standard_Pickup</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>50</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
