@@ -39,6 +39,7 @@
       </recipeUsers>
       <skillRequirements>
         <Crafting>2</Crafting>
+        <Plants>4</Plants>
       </skillRequirements>
       <displayPriority>550</displayPriority>
     </recipeMaker>
@@ -79,5 +80,69 @@
     </projectile>
   </ThingDef>
 
+<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_Clawblade</defName>
+    <label>longsword</label>
+    <description>A claw repurposed and sharpened into a honed blade. Created from a clawer's essence.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Clawblade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <WoodLog>30</WoodLog>
+      <ComponentDryad_Clawer>1</ComponentDryad_Clawer>
+    </costList>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>19</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>DryadicArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+        <Plants>5</Plants>
+      </skillRequirements>
+      <displayPriority>510</displayPriority>
+    </recipeMaker>
+  </ThingDef>
 
 </Defs>

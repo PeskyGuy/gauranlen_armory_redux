@@ -101,9 +101,9 @@
 
 <RecipeDef>
     <defName>Make_ComponentDryadIronback</defName>
-    <label>make ironback essence</label>
-    <description>Make an ironback essence.</description>
-    <jobString>Making ironback essence.</jobString>
+    <label>make stalwart essence</label>
+    <description>Make an stalwart essence.</description>
+    <jobString>Making stalwart essence.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -151,9 +151,9 @@
 
 <RecipeDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>Make_ComponentDryadBloodmaker</defName>
-    <label>make bloodmaker essence</label>
-    <description>Make a bloodmaker essence.</description>
-    <jobString>Making bloodmaker essence.</jobString>
+    <label>make bloody essence</label>
+    <description>Make a bloody essence.</description>
+    <jobString>Making bloody essence.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -201,9 +201,9 @@
 
 <RecipeDef MayRequire="Ludeon.RimWorld.Anomaly">
     <defName>Make_ComponentDryadFerritemaker</defName>
-    <label>make ferritemaker essence</label>
-    <description>Make a ferritemaker essence.</description>
-    <jobString>Making ferritemaker essence.</jobString>
+    <label>make wrought essence</label>
+    <description>Make a wrought essence.</description>
+    <jobString>Making wrought essence.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>

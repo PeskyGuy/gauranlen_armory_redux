@@ -2,6 +2,7 @@
 <Defs>
 
   <!-- Rootcraft -->
+  
   <ResearchProjectDef>
     <defName>Rootcraft</defName>
     <label>rootcraft</label>
@@ -17,6 +18,7 @@
   </ResearchProjectDef>
 
   <!-- Spagyric Alchemy -->
+
   <ResearchProjectDef>
     <defName>SpagyricAlchemy</defName>
     <label>spagyric alchemy</label>
@@ -36,6 +38,7 @@
   </ResearchProjectDef>
 
   <!-- Grafting -->
+
   <ResearchProjectDef>
     <defName>Grafting</defName>
     <label>essence grafting</label>
@@ -54,6 +57,7 @@
   </ResearchProjectDef>
 
   <!-- Dryadic Effigies -->
+
   <ResearchProjectDef>
     <defName>DryadicEffigies</defName>
     <label>dryadic effigies</label>
@@ -73,6 +77,7 @@
   </ResearchProjectDef>
 
   <!-- Dryadic Armaments -->
+
   <ResearchProjectDef>
     <defName>DryadicArmaments</defName>
     <label>dryadic armaments</label>
@@ -91,6 +96,7 @@
   </ResearchProjectDef>
 
   <!-- Awakened Essences -->
+
   <ResearchProjectDef MayRequire="vanillaexpanded.ideo.dryads">
     <defName>AwakenedEssences</defName>
     <label>awakened essences</label>
