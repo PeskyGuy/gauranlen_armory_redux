@@ -23,8 +23,8 @@
 <GauranlenTreeModeDef>
     <defName>Firemaker</defName>
     <label>firemaker</label>
-    <description>A small, weak caste of dryad which specializes in creating electricity from the sun. This dryad can connect to power lines and help produce power during the day, they can stay in this state for 30 days.</description>
-    <drawPosition>(1, 1)</drawPosition>
+    <description>A medium sized caste of dryad which specializes in producing chemfuel from nodules on its back, similar to a boomalope it also explodes on death. This dryad produces chemfuel every 10 days.</description>
+    <drawPosition>(1, 2)</drawPosition>
     <pawnKindDef>Dryad_Firemaker</pawnKindDef>
     <displayedStats>
       <li>MaxHitPoints</li>
@@ -33,6 +33,66 @@
     <hyperlinks>
       <ThingDef>Dryad_Firemaker</ThingDef>
       <ThingDef>Chemfuel</ThingDef>
+    </hyperlinks>
+  </GauranlenTreeModeDef>
+
+<!-- Ironback Dryad -->
+
+<GauranlenTreeModeDef>
+    <defName>Ironback</defName>
+    <label>ironback</label>
+    <description>A large sized caste of dryad which specializes in producing steel from growing formations on its back. This dryad produces steel every 10 days.</description>
+    <drawPosition>(1, 3)</drawPosition>
+    <pawnKindDef>Dryad_Ironback</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+      <li>ArmorRating_Sharp</li>
+      <li>ArmorRating_Blunt</li>
+      <li>ArmorRating_Heat</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>Dryad_Ironback</ThingDef>
+      <ThingDef>Steel</ThingDef>
+    </hyperlinks>
+  </GauranlenTreeModeDef>
+
+<!-- Ferritemaker Dryad -->
+
+<GauranlenTreeModeDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>Ferritemaker</defName>
+    <label>ferritemaker</label>
+    <description>A medium sized caste of dryad which specializes in producing bioferrite from crystal formations on its back. This dryad produces bioferrite every 5 days.</description>
+    <drawPosition>(1, 4)</drawPosition>
+    <pawnKindDef>Dryad_Ferritemaker</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+      <li>ArmorRating_Sharp</li>
+      <li>ArmorRating_Blunt</li>
+      <li>ArmorRating_Heat</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>Dryad_Ferritemaker</ThingDef>
+      <ThingDef>Bioferrite</ThingDef>
+    </hyperlinks>
+  </GauranlenTreeModeDef>
+
+<!-- Bloodmaker Dryad -->
+
+<GauranlenTreeModeDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Bloodmaker</defName>
+    <label>Bloodmaker</label>
+    <description>A tall spindly caste of dryad which specializes in producing hemogen from sacs near its mouth. This dryad produces hemogen every 5 days.</description>
+    <drawPosition>(1, 5)</drawPosition>
+    <pawnKindDef>Dryad_Bloodmaker</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>Dryad_Bloodmaker</ThingDef>
+      <ThingDef>HemogenPack</ThingDef>
     </hyperlinks>
   </GauranlenTreeModeDef>
 
