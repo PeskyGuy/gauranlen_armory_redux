@@ -6,7 +6,7 @@
 <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>Bow_Sinew</defName>
     <label>sinew bow</label>
-    <description>A simple shortbow made from wood and the sinew of an immature dryad.</description>
+    <description>A shortbow made from the bone and sinew of an immature dryad.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/BowSinew</texPath>
@@ -15,7 +15,7 @@
     <soundInteract>Bow_Small</soundInteract>
     <costList>
       <WoodLog>30</WoodLog>
-      <ComponentDryad_Basic>1</ComponentDryad_Basic>
+      <ComponentDryad_Basic>2</ComponentDryad_Basic>
     </costList>
     <statBases>
       <WorkToMake>2400</WorkToMake>
@@ -80,9 +80,72 @@
     </projectile>
   </ThingDef>
 
+<!-- Carrier Dryad -->
+
+<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>MeleeWeapon_CarrierFlail</defName>
+    <label>carrier flail</label>
+    <description>The carrier's mouth pouch turned into a spiked flail. Created from a carrier's essence.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/CarrierFlail</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <WoodLog>30</WoodLog>
+      <Steel>15</Steel>
+      <ComponentDryad_Carrier>3</ComponentDryad_Carrier>
+    </costList>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>Head</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>DryadicArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+        <Plants>5</Plants>
+      </skillRequirements>
+      <displayPriority>510</displayPriority>
+      <recipeUsers>
+          <li>ElectricSmithy</li>
+          <li>FueledSmithy</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+<!-- Clawer Dryad -->
+
 <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>MeleeWeapon_Clawblade</defName>
-    <label>longsword</label>
+    <label>Clawblade</label>
     <description>A claw repurposed and sharpened into a honed blade. Created from a clawer's essence.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
@@ -91,7 +154,7 @@
     </graphicData>
     <costList>
       <WoodLog>30</WoodLog>
-      <ComponentDryad_Clawer>1</ComponentDryad_Clawer>
+      <ComponentDryad_Clawer>2</ComponentDryad_Clawer>
     </costList>
     <techLevel>Neolithic</techLevel>
     <weaponTags>
@@ -105,10 +168,6 @@
     </statBases>
     <relicChance>2</relicChance>
     <equippedAngleOffset>-65</equippedAngleOffset>
-    <stuffCategories>
-      <li>Metallic</li>
-      <li>Woody</li>
-    </stuffCategories>
     <tools>
       <li>
         <label>handle</label>
@@ -142,7 +201,139 @@
         <Plants>5</Plants>
       </skillRequirements>
       <displayPriority>510</displayPriority>
+      <recipeUsers>
+          <li>ElectricSmithy</li>
+          <li>FueledSmithy</li>
+        </recipeUsers>
     </recipeMaker>
   </ThingDef>
+
+<!-- Barkskin Dryad -->
+
+<ThingDef Name="GA_BaseShield" ParentName="BaseMeleeWeapon_Blunt_Quality" Abstract="True">
+        <techLevel>Neolithic</techLevel>
+        <thingCategories>
+            <li>VFEC_Shields</li>
+        </thingCategories>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+            <MeleeDodgeChance>-2</MeleeDodgeChance>
+        </equippedStatOffsets>
+		<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		<bodyPartGroups>
+			<li>LeftHand</li>
+			<li>Arms</li>
+		</bodyPartGroups>
+			<layers>
+				<li>VFEC_OuterShell</li>
+			</layers>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+        <comps>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+        </comps>
+        <equippedAngleOffset>-30</equippedAngleOffset>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <tools>
+            <li>
+                <label>base</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>centre</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+<!-- Barkskin Dryad -->
+
+<ThingDef ParentName="GA_BaseShield">
+        <defName>BarkskinShield</defName>
+        <label>barkskin shield</label>
+        <description>A shield with the mangled face of a barkskin dryad, provides decent protection against everything but heat.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Shield/BarkskinShield/BarkskinShield</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <costList>
+            <WoodLog>60</WoodLog>
+            <Steel>20</Steel>
+	      		<ComponentDryad_Barkskin>2</ComponentDryad_Barkskin>
+        </costList>
+        <recipeUsers>
+          <li>ElectricSmithy</li>
+          <li>FueledSmithy</li>
+        </recipeUsers>
+		<recipeMaker>
+			<researchPrerequisite>DryadicArmaments</researchPrerequisite>
+		</recipeMaker>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Flammability>1.5</Flammability>
+            <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.15</ArmorRating_Heat>
+            <WorkToMake>3600</WorkToMake>
+            <Mass>2.7</Mass>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.1</MoveSpeed>
+        </equippedStatOffsets>
+        <comps>
+            <li Class="VEF.Apparels.CompProperties_Shield">
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Neck</li>
+                    <li>Torso</li>
+                    <li>Arms</li>
+				          	<li>Legs</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Things/Item/Equipment/Shield/BarkskinShield/BarkskinShield</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(-0.05, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.15, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0.2, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.15, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+
 
 </Defs>
