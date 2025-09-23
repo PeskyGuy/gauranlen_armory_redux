@@ -22,7 +22,7 @@
   <ResearchProjectDef>
     <defName>SpagyricAlchemy</defName>
     <label>spagyric alchemy</label>
-    <description>Unlock the secrets of dryadic alchemy. Learn to brew potions and draughts from dryad essences that can enhance colonists' abilities, though often with risks and side effects.</description>
+    <description>Unlock the secrets of dryadic alchemy. Learn to brew potions and draughts from dryad essences that can enhance abilities.</description>
     <baseCost>2000</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>Dryadtech</tab>
@@ -69,7 +69,8 @@
     <researchViewY>1</researchViewY>
     <prerequisites>
       <li>SpagyricAlchemy</li>
-      <li>Electricity</li>
+      <li>Rootcraft</li>
+      <li>Grafting</li>
     </prerequisites>
     <requiredResearchFacilities>
       <li>Gau_Symbiont</li>
@@ -88,7 +89,7 @@
     <researchViewX>3</researchViewX>
     <researchViewY>0</researchViewY>
     <prerequisites>
-      <li>Grafting</li>
+      <li>Rootcraft</li>
     </prerequisites>
     <requiredResearchFacilities>
       <li>Gau_Symbiont</li>
@@ -107,7 +108,7 @@
     <researchViewX>2</researchViewX>
     <researchViewY>2</researchViewY>
     <prerequisites>
-      <li>DryadicEffigies</li>
+      <li>Rootcraft</li>
       <li>DryadicArmaments</li>
     </prerequisites>
     <requiredResearchFacilities>

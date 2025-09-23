@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef Name="BodyPartDryadicPartBase" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Medieval</techLevel>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Health/DryadBionic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(212, 160, 23)</color>
+    </graphicData>
+    <tradeTags>
+      <li>Bionic</li>
+    </tradeTags>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Grafting</researchPrerequisite>
+      <recipeUsers>
+        <li>GroveCrucible</li>
+      </recipeUsers>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+<!-- Carrier Dryad -->
+
+<HediffDef ParentName="AddedBodyPartBase">
+    <defName>BurdenReducer</defName>
+    <label>burden reducer</label>
+    <labelNoun>a burden reducer</labelNoun>
+    <description>An installed burden reducer. The spine of a carrier dryad grafted with an existing spine. It is superior to human spines.</description>
+    <descriptionHyperlinks><ThingDef>BurdenReducer</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BurdenReducer</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartDryadicPartBase">
+    <defName>BurdenReducer</defName>
+    <label>burden reducer</label>
+    <description>A kit to graft onto a spine. Contains the necessary components to perform a proper grafting.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicSpine</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Jade>25</Jade>
+      <ComponentDryad_Carrier>4</ComponentDryad_Carrier>
+    </costList>
+    <statBases>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallBurdenReducer</defName>
+    <label>install burden reducer</label>
+    <description>Install a burden reducer.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BurdenReducer</ThingDef>
+      <HediffDef>BurdenReducer</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing burden reducer.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BurdenReducer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BurdenReducer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BurdenReducer</addsHediff>
+  </RecipeDef>
+
+<!-- Clawer Dryad -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>ClawerGlands</defName>
+    <label>clawer glands</label>
+    <labelNoun>a clawer glands</labelNoun>
+    <description>Installed clawer glands. A set of glands extracted from a clawer dryad, it enhances reflexes and perception.</description>
+    <descriptionHyperlinks><ThingDef>ClawerGlands</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>ClawerGlands</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statFactors>
+          <MeleeDamageFactor>1.2</MeleeDamageFactor>
+        </statFactors>
+        <statOffsets>
+          <MoveSpeed>0.45</MoveSpeed>
+          <RestFallRateFactor>-0.1</RestFallRateFactor>
+        </statOffsets>
+        <capMods>
+            <li>
+              <capacity>BloodPumping</capacity>
+              <offset>0.25</offset>
+            </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartDryadicPartBase">
+    <defName>ClawerGlands</defName>
+    <label>clawer glands</label>
+    <description>A set of glands extracted from a clawer dryad, it enhances reflexes and perception. These nodules constantly pump dryadic compounds and adrenaline into the user's bloodstream.</description>
+    <descriptionHyperlinks><RecipeDef>InstallClawerGlands</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Steel>15</Steel>
+      <WoodLog>20</WoodLog>
+      <ComponentDryad_Clawer>3</ComponentDryad_Clawer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Grafting</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallClawerGlands</defName>
+    <label>install clawer glands</label>
+    <description>Install clawer glands.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ClawerGlands</ThingDef>
+      <HediffDef>ClawerGlands</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing clawer glands.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ClawerGlands</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ClawerGlands</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ClawerGlands</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveClawerGlands</defName>
+    <label>remove clawer glands</label>
+    <description>Remove clawer glands.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ClawerGlands</ThingDef>
+      <HediffDef>ClawerGlands</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing clawer glands.</jobString>
+    <removesHediff>ClawerGlands</removesHediff>
+  </RecipeDef>
+
+
+
+</Defs>

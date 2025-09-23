@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+    <defName>Make_TextileBurdenweave</defName>
+    <label>make burdenweave</label>
+    <description>Make burdenweave.</description>
+    <jobString>Making burdenweave.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1000</workAmount>
+    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentDryad_Carrier</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cloth</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentDryad_Carrier</li>
+        <li>Cloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BurdenweaveCloth>35</BurdenweaveCloth>
+    </products>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+      <Plants>5</Plants>
+    </skillRequirements>
+    <workSkill>Plants</workSkill>
+    <displayPriority>10</displayPriority>
+  </RecipeDef>
+
+
+
+</Defs>

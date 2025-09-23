@@ -208,6 +208,74 @@
     </recipeMaker>
   </ThingDef>
 
+<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_Reapclaw</defName>
+    <label>reapclaw</label>
+    <description>A claw repurposed and sharpened into a farming implement. Created from a clawer's essence.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Reapclaw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <WoodLog>20</WoodLog>
+      <ComponentDryad_Clawer>1</ComponentDryad_Clawer>
+    </costList>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.4</PlantWorkSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>hook</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>DryadicArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Plants>5</Plants>
+      </skillRequirements>
+      <displayPriority>510</displayPriority>
+      <recipeUsers>
+          <li>ElectricSmithy</li>
+          <li>FueledSmithy</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
 <!-- Barkskin Dryad -->
 
 <ThingDef Name="GA_BaseShield" ParentName="BaseMeleeWeapon_Blunt_Quality" Abstract="True">
@@ -263,8 +331,6 @@
             </li>
         </tools>
     </ThingDef>
-
-<!-- Barkskin Dryad -->
 
 <ThingDef ParentName="GA_BaseShield">
         <defName>BarkskinShield</defName>
