@@ -35,7 +35,7 @@
     </weaponClasses>
     <recipeMaker>
       <recipeUsers>
-        <li>TableRending</li>
+          <li>GroveCrucible</li>
       </recipeUsers>
       <skillRequirements>
         <Crafting>2</Crafting>
@@ -135,8 +135,7 @@
       </skillRequirements>
       <displayPriority>510</displayPriority>
       <recipeUsers>
-          <li>ElectricSmithy</li>
-          <li>FueledSmithy</li>
+          <li>GroveCrucible</li>
         </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -202,8 +201,7 @@
       </skillRequirements>
       <displayPriority>510</displayPriority>
       <recipeUsers>
-          <li>ElectricSmithy</li>
-          <li>FueledSmithy</li>
+          <li>GroveCrucible</li>
         </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -270,8 +268,7 @@
       </skillRequirements>
       <displayPriority>510</displayPriority>
       <recipeUsers>
-          <li>ElectricSmithy</li>
-          <li>FueledSmithy</li>
+          <li>GroveCrucible</li>
         </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -342,8 +339,7 @@
 	      		<ComponentDryad_Barkskin>2</ComponentDryad_Barkskin>
         </costList>
         <recipeUsers>
-          <li>ElectricSmithy</li>
-          <li>FueledSmithy</li>
+          <li>GroveCrucible</li>
         </recipeUsers>
 		<recipeMaker>
 			<researchPrerequisite>DryadicArmaments</researchPrerequisite>

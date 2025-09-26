@@ -99,7 +99,7 @@
   <HediffDef ParentName="ImplantHediffBase">
     <defName>ClawerGlands</defName>
     <label>clawer glands</label>
-    <labelNoun>a clawer glands</labelNoun>
+    <labelNoun>clawer glands</labelNoun>
     <description>Installed clawer glands. A set of glands extracted from a clawer dryad, it enhances reflexes and perception.</description>
     <descriptionHyperlinks><ThingDef>ClawerGlands</ThingDef></descriptionHyperlinks>
     <spawnThingOnRemoved>ClawerGlands</spawnThingOnRemoved>
@@ -178,6 +178,87 @@
     </descriptionHyperlinks>
     <jobString>Removing clawer glands.</jobString>
     <removesHediff>ClawerGlands</removesHediff>
+  </RecipeDef>
+
+<!-- Barkskin Dryad -->
+
+<HediffDef ParentName="ImplantHediffBase">
+    <defName>Barkplate</defName>
+    <label>barkplate</label>
+    <labelNoun>a barkplate implant</labelNoun>
+    <description>Installed barkplate implant. A set of plates extracted from a barkskin dryad, it slows the user but increases their armor.</description>
+    <descriptionHyperlinks><ThingDef>ClawerGlands</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>ClawerGlands</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statFactors>
+          <MeleeDamageFactor>1.2</MeleeDamageFactor>
+        </statFactors>
+        <statOffsets>
+          <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+          <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+          <ArmorRating_Heat>0.1</ArmorRating_Heat>        
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartDryadicPartBase">
+    <defName>Barkplate</defName>
+    <label>barkplate</label>
+    <description>A set of plates extracted from a barkskin dryad crudely stitched into the skin of the user, enhancing their toughness.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBarkplate</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Steel>15</Steel>
+      <WoodLog>20</WoodLog>
+      <ComponentDryad_Barkskin>3</ComponentDryad_Barkskin>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Grafting</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallBarkplate</defName>
+    <label>install barkplate</label>
+    <description>Install barkplate.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Barkplate</ThingDef>
+      <HediffDef>Barkplate</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing barkplate.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Barkplate</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Barkplate</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Barkplate</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveBarkplate</defName>
+    <label>remove barkplate</label>
+    <description>Remove barkplate.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Barkplate</ThingDef>
+      <HediffDef>Barkplate</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing barkplate.</jobString>
+    <removesHediff>Barkplate</removesHediff>
   </RecipeDef>
 
 </Defs>

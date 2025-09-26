@@ -9,7 +9,7 @@
     <description>A work station for disassembling dryad corpses, or creating Rootcraft products.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
-      <texPath>Things/Building/Production/TableRending</texPath>
+      <texPath>Things/Building/Production/TableRending/TableRending</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2.5,1.5)</drawSize>
       <damageData>
@@ -95,6 +95,8 @@
     </placeWorkers>
   </ThingDef>
 
+<!-- Grove Crucible -->
+
   <ThingDef ParentName="BenchBase">
     <defName>GroveCrucible</defName>
     <label>grove crucible</label>
@@ -104,7 +106,7 @@
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
+      <MaxHitPoints>100</MaxHitPoints>
       <WorkToBuild>3000</WorkToBuild>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -115,20 +117,14 @@
       <Steel>200</Steel>
       <WoodLog>100</WoodLog>
       <GauranlenSeed>1</GauranlenSeed>
-      <ComponentDryad_Gaumaker>2</ComponentDryad_Gaumaker>
+      <ComponentDryad_Gaumaker>1</ComponentDryad_Gaumaker>
     </costList>
     <recipes>
-    <!-- Rootcrafting -->
       <li>Make_TextileBurdenweave</li>
-
-
-    <!-- Spagyric Alchemy -->
       <li>Make_Clawmarrow</li>
-
-
     </recipes>
     <graphicData>
-      <texPath>Things/Building/Production/FabricationBench</texPath>
+      <texPath>Things/Building/Production/GroveCrucible/GroveCrucible</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(7,4)</drawSize>
@@ -163,7 +159,7 @@
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>Fabrication</li>
+      <li>SpagyricAlchemy</li>
     </researchPrerequisites>
   </ThingDef>
 

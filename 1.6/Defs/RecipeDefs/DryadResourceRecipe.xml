@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+    <defName>Make_WoodFromBarkskin</defName>
+    <label>make wood from barkskin essence</label>
+    <description>Make wood from barkskin essence.</description>
+    <jobString>Making wood from barkskin essence.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1000</workAmount>
+    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentDryad_Barkskin</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentDryad_Barkskin</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <WoodLog>50</WoodLog>
+    </products>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>2</Crafting>
+      <Plants>3</Plants>
+    </skillRequirements>
+    <workSkill>Plants</workSkill>
+    <displayPriority>10</displayPriority>
+  </RecipeDef>
+
+
+</Defs>
