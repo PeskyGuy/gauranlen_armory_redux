@@ -4,7 +4,7 @@
 <!-- Carrier Dryad -->
 
 <ThingDef ParentName="MakeableDrugBase">
-    <defName>Tonic_Vigor</defName>
+    <defName>VigorTonic</defName>
     <label>vigor tonic</label>
     <description>A potion created from rendered carrier fat and leaves from the gauranlen tree, enhances a drinker's strength and speed with a mild potential for addiction.</description>
     <descriptionHyperlinks>
@@ -42,12 +42,12 @@
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>VigorTonicHigh</hediffDef>
           <severity>0.5</severity>
-          <toleranceChemical>Tonic_Vigor</toleranceChemical>
+          <toleranceChemical>VigorTonic</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
           <need>Rest</need>
           <offset>0.4</offset>
-          <toleranceChemical>Tonic_Vigor</toleranceChemical>
+          <toleranceChemical>VigorTonic</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
           <offset>0.15</offset>
@@ -68,7 +68,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
-        <chemical>Tonic_Vigor</chemical>
+        <chemical>VigorTonic</chemical>
         <addictiveness>0.014</addictiveness>
         <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
         <needLevelOffset>0.8</needLevelOffset>
@@ -254,7 +254,7 @@
 <!-- Clawer Dryad -->
 
 <ThingDef ParentName="MakeableDrugBase">
-    <defName>Tonic_Feral</defName>
+    <defName>FeralTonic</defName>
     <label>feral tonic</label>
     <description>A potion created from rendered clawer marrow and leaves from the gauranlen tree, enhances a drinker's combat capabilities with a high potential for addiction.</description>
     <descriptionHyperlinks>
@@ -292,12 +292,12 @@
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>FeralTonicHigh</hediffDef>
           <severity>0.7</severity>
-          <toleranceChemical>Tonic_Feral</toleranceChemical>
+          <toleranceChemical>FeralTonic</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
           <need>Rest</need>
           <offset>0.6</offset>
-          <toleranceChemical>Tonic_Feral</toleranceChemical>
+          <toleranceChemical>FeralTonic</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
           <offset>0.15</offset>
@@ -318,7 +318,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
-        <chemical>Tonic_Feral</chemical>
+        <chemical>FeralTonic</chemical>
         <addictiveness>0.054</addictiveness>
         <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
         <needLevelOffset>0.8</needLevelOffset>
@@ -726,6 +726,88 @@
         <label>high on bark tonic</label>
         <description>My skin is tough but I can't move properly.</description>
         <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<!-- Berrymaker Dryad -->
+
+<ThingDef ParentName="DrugBase">
+    <defName>NutritionTonic</defName>
+    <label>nutrition tonic</label>
+    <description></description>
+    <descriptionHyperlinks>
+      <HediffDef>NutritionTonicHigh</HediffDef>
+    </descriptionHyperlinks>
+    <tradeability>Sellable</tradeability>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <tickerType>Rare</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Drug/NutritionTonic/NutritionTonic</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>20</MarketValue>
+      <Mass>0.1</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <techLevel>Medieval</techLevel>
+    <ingestible>
+      <baseIngestTicks>80</baseIngestTicks>
+      <chairSearchRadius>4</chairSearchRadius>
+      <preferability>MealSimple</preferability>
+      <foodType>Processed, Fluid</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.1</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>NutritionTonicHigh</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <allowedArchonexusCount>20</allowedArchonexusCount>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>NutritionTonicHigh</defName>
+    <label>nutrition tonic</label>
+    <description>Consumed nutrition tonic.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.45</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <li>
+    <stages>
+      <li>
+        <hungerRateFactor>0.4</hungerRateFactor>
+      </li>
+    </stages>
+    </li>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>NutritionTonicHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>NutritionTonicHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>Satiated</label>
+        <description>That tonic satisfied my hunger.</description>
+        <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

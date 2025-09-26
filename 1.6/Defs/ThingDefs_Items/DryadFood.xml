@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- Clawer Dryad -->
+
 <ThingDef ParentName="OrganicProductBase">
     <defName>Clawmarrow</defName>
     <label>clawmarrow</label>
@@ -41,5 +43,50 @@
     </comps>
     <allowedArchonexusCount>200</allowedArchonexusCount>
   </ThingDef>
+
+<!-- Berrymaker Dryad -->
+
+<ThingDef ParentName="OrganicProductBase">
+    <defName>CorpseMash</defName>
+    <label>corpsemash</label>
+    <description>A dried mash of berrymaker and berries, very sweet and lasts a long time.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Resource/CorpseMash/CorpseMash</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.7</MarketValue>
+      <Mass>0.024</Mass>
+      <Flammability>0.9</Flammability>
+      <WorkToMake>800</WorkToMake>
+      <DeteriorationRate>1</DeteriorationRate>
+      <Nutrition>0.8</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Meal</foodType>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+    <allowedArchonexusCount>200</allowedArchonexusCount>
+  </ThingDef>
+
+
 
 </Defs>

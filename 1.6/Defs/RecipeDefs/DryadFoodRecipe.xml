@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+<!-- Clawer Dryad -->
 
 <RecipeDef>
     <defName>Make_Clawmarrow</defName>
@@ -32,7 +33,7 @@
       </li>
     </ingredients>
     <products>
-      <Clawmarrow>24</Clawmarrow>
+      <Clawmarrow>15</Clawmarrow>
     </products>
     <fixedIngredientFilter>
       <categories>
@@ -56,6 +57,55 @@
     </defaultIngredientFilter>
     <workSkill>Cooking</workSkill>
     <researchPrerequisite>SpagyricAlchemy</researchPrerequisite>
+    <displayPriority>1440</displayPriority>
+  </RecipeDef>
+
+<!-- Berrymaker Dryad -->
+
+<RecipeDef>
+    <defName>Make_CorpseMash</defName>
+    <label>make corpse mash</label>
+    <description>Make corpse mash.</description>
+    <jobString>Making corpse mash.</jobString>
+    <workAmount>450</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.25</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>ComponentDryad_Berrymaker</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+        <li>ComponentDryad_Berrymaker</li>
+      </categories>
+      <disallowedCategories>
+        <li>MeatRaw</li>
+        <li>EggsFertilized</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <products>
+      <CorpseMash>15</CorpseMash>
+    </products>
     <displayPriority>1440</displayPriority>
   </RecipeDef>
 
