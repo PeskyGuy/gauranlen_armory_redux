@@ -2,7 +2,6 @@
 <Defs>
 
 <!-- Gaubricmaker Dryad -->
-
 <RecipeDef MayRequire="vanillaexpanded.ideo.dryads">
     <defName>Make_ComponentDryadGaubricmaker</defName>
     <label>make fibrous essence</label>
@@ -50,7 +49,6 @@
   </RecipeDef>
 
 <!-- Stonedigger Dryad -->
-
 <RecipeDef MayRequire="vanillaexpanded.ideo.dryads">
     <defName>Make_ComponentDryadStonedigger</defName>
     <label>make stony essence</label>
@@ -98,7 +96,6 @@
 </RecipeDef>
 
 <!-- Spitter Dryad -->
-
 <RecipeDef MayRequire="vanillaexpanded.ideo.dryads">
     <defName>Make_ComponentDryadSpitter</defName>
     <label>make acidic essence</label>
@@ -146,7 +143,6 @@
 </RecipeDef>
 
 <!-- Nectarmaker Dryad -->
-
 <RecipeDef MayRequire="vanillaexpanded.ideo.dryads">
     <defName>Make_ComponentDryadNectarmaker</defName>
     <label>make sweet essence</label>

@@ -10,7 +10,7 @@
       <li>Foods</li>
     </thingCategories>
     <graphicData>
-      <texPath>Things/Item/Resource/Clawmarrow</texPath>
+      <texPath>Things/Item/Resource/Clawmarrow/Clawmarrow</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>false</socialPropernessMatters>

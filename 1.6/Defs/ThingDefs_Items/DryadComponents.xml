@@ -5,7 +5,7 @@
 
 <ThingDef ParentName="ResourceBase">
     <defName>ComponentDryad_Basic</defName>
-    <label>immature dryadic essence</label>
+    <label>simple essence</label>
     <description>The essence of a fallen immature dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Basic</texPath>
@@ -37,7 +37,7 @@
 
 <ThingDef ParentName="ResourceBase">
 <defName>ComponentDryad_Carrier</defName>
-    <label>burdened dryadic essence</label>
+    <label>burdened essence</label>
     <description>The essence of a fallen carrier dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Carrier</texPath>
@@ -69,7 +69,7 @@
 
 <ThingDef ParentName="ResourceBase">
 <defName>ComponentDryad_Clawer</defName>
-    <label>sharp dryadic essence</label>
+    <label>sharpened essence</label>
     <description>The essence of a fallen clawer dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Clawer</texPath>
@@ -101,7 +101,7 @@
 
 <ThingDef ParentName="ResourceBase">
 <defName>ComponentDryad_Barkskin</defName>
-    <label>rough dryadic essence</label>
+    <label>tough essence</label>
     <description>The essence of a fallen barkskin dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Barkskin</texPath>
@@ -133,7 +133,7 @@
 
 <ThingDef ParentName="ResourceBase">
 <defName>ComponentDryad_Woodmaker</defName>
-    <label>wooden dryadic essence</label>
+    <label>woody essence</label>
     <description>The essence of a fallen woodmaker dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Woodmaker</texPath>
@@ -165,7 +165,7 @@
 
 <ThingDef ParentName="ResourceBase">
 <defName>ComponentDryad_Medicinemaker</defName>
-    <label>healing dryadic essence</label>
+    <label>vital essence</label>
     <description>The essence of a fallen medicinemaker dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Medicinemaker</texPath>
@@ -197,7 +197,7 @@
 
 <ThingDef ParentName="ResourceBase">
 <defName>ComponentDryad_Gaumaker</defName>
-    <label>gaumaker dryadic essence</label>
+    <label>blessed essence</label>
     <description>The essence of a fallen gaumaker dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Gaumaker</texPath>

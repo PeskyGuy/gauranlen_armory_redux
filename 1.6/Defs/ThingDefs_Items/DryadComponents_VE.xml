@@ -5,7 +5,7 @@
 
 <ThingDef ParentName="ResourceBase">
     <defName>ComponentDryad_Gaubricmaker</defName>
-    <label>fibrous dryadic essence</label>
+    <label>fibrous essence</label>
     <description>The essence of a fallen gaubricmaker dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Gaubricmaker</texPath>
@@ -36,7 +36,7 @@
 <!-- Stonedigger Dryad -->
 <ThingDef ParentName="ResourceBase">
     <defName>ComponentDryad_Stonedigger</defName>
-    <label>stony dryadic essence</label>
+    <label>stony essence</label>
     <description>The essence of a fallen stonedigger dryad, made from the parts of its corpse. Contains traces of mineral compounds.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Stonedigger</texPath>
@@ -67,7 +67,7 @@
 <!-- Spitter Dryad -->
 <ThingDef ParentName="ResourceBase">
     <defName>ComponentDryad_Spitter</defName>
-    <label>acidic dryadic essence</label>
+    <label>acidic essence</label>
     <description>The essence of a fallen spitter dryad, made from the parts of its corpse. Contains corrosive compounds.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Spitter</texPath>
@@ -98,7 +98,7 @@
 <!-- Nectarmaker Dryad -->
 <ThingDef ParentName="ResourceBase">
     <defName>ComponentDryad_Nectarmaker</defName>
-    <label>sweet dryadic essence</label>
+    <label>sweet essence</label>
     <description>The essence of a fallen nectarmaker dryad, made from the parts of its corpse. Has a pleasant aroma.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Nectarmaker</texPath>

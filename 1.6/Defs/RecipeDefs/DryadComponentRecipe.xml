@@ -5,9 +5,9 @@
 
 <RecipeDef>
     <defName>Make_ComponentDryadBasic</defName>
-    <label>make immature essence</label>
-    <description>Make an immature essence.</description>
-    <jobString>Making immature essence.</jobString>
+    <label>make simple essence</label>
+    <description>Make a simple essence.</description>
+    <jobString>Making simple essence.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -53,9 +53,9 @@
 
 <RecipeDef>
     <defName>Make_ComponentDryadCarrier</defName>
-    <label>make carrier essence</label>
-    <description>Make an carrier essence.</description>
-    <jobString>Making carrier essence.</jobString>
+    <label>make burdened essence</label>
+    <description>Make a burdened essence.</description>
+    <jobString>Making burdened essence.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -101,9 +101,9 @@
 
 <RecipeDef>
     <defName>Make_ComponentDryadBarkskin</defName>
-    <label>make barkskin essence</label>
-    <description>Make a barkskin essence.</description>
-    <jobString>Making barkskin essence.</jobString>
+    <label>make tough essence</label>
+    <description>Make a tough essence.</description>
+    <jobString>Making tough essence.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -149,9 +149,9 @@
 
 <RecipeDef>
     <defName>Make_ComponentDryadWoodmaker</defName>
-    <label>make woodmaker essence</label>
-    <description>Make a woodmaker essence.</description>
-    <jobString>Making woodmaker essence.</jobString>
+    <label>make woody essence</label>
+    <description>Make a woody essence.</description>
+    <jobString>Making woody essence.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -197,9 +197,9 @@
 
 <RecipeDef>
     <defName>Make_ComponentDryadMedicinemaker</defName>
-    <label>make medicinemaker essence</label>
-    <description>Make a medicinemaker essence.</description>
-    <jobString>Making medicinemaker essence.</jobString>
+    <label>make vital essence</label>
+    <description>Make a vital essence.</description>
+    <jobString>Making vital essence.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -245,9 +245,9 @@
 
 <RecipeDef>
     <defName>Make_ComponentDryadGaumaker</defName>
-    <label>make gaumaker essence</label>
-    <description>Make a gaumaker essence.</description>
-    <jobString>Making gaumaker essence.</jobString>
+    <label>make blessed essence</label>
+    <description>Make a blessed essence.</description>
+    <jobString>Making blessed essence.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>

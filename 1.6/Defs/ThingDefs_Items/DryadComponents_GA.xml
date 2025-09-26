@@ -5,7 +5,7 @@
 
 <ThingDef ParentName="ResourceBase">
     <defName>ComponentDryad_Sunkeeper</defName>
-    <label>bright dryadic essence</label>
+    <label>bright essence</label>
     <description>The essence of a fallen sunkeeper dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Sunkeeper</texPath>
@@ -37,7 +37,7 @@
 
 <ThingDef ParentName="ResourceBase">
     <defName>ComponentDryad_Firemaker</defName>
-    <label>flaming dryadic essence</label>
+    <label>blazing essence</label>
     <description>The essence of a fallen firemaker dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Firemaker</texPath>
@@ -69,7 +69,7 @@
 
 <ThingDef ParentName="ResourceBase">
     <defName>ComponentDryad_Ironback</defName>
-    <label>wrought dryadic essence</label>
+    <label>stalwart essence</label>
     <description>The essence of a fallen ironback dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Ironback</texPath>
@@ -101,7 +101,7 @@
 
 <ThingDef ParentName="ResourceBase" MayRequire="Ludeon.RimWorld.Biotech">
     <defName>ComponentDryad_Bloodmaker</defName>
-    <label>bloody dryadic essence</label>
+    <label>sanguine essence</label>
     <description>The essence of a fallen bloodmaker dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Bloodmaker</texPath>
@@ -133,7 +133,7 @@
 
 <ThingDef ParentName="ResourceBase" MayRequire="Ludeon.RimWorld.Anomaly">
     <defName>ComponentDryad_Ferritemaker</defName>
-    <label>ferrous dryadic essence</label>
+    <label>wrought essence</label>
     <description>The essence of a fallen ferritemaker dryad, made from the parts of its corpse.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentDryad_Ferritemaker</texPath>
