@@ -464,11 +464,11 @@
 <DamageDef ParentName="BaseProjectileNeolithic">
     <defName>ArrowToxic</defName>
     <label>toxic arrow</label>
-    <additionalHediffs>
     <graphicData>
       <texPath>Things/Projectile/Arrow_Toxicberry</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <additionalHediffs>
       <li>
         <hediff>ToxicBuildup</hediff>
         <severityPerDamageDealt>0.0055</severityPerDamageDealt>
