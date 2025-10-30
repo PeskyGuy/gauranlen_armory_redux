@@ -301,7 +301,7 @@
 		</apparel>
         <equippedAngleOffset>-30</equippedAngleOffset>
         <stuffCategories>
-            <li>Leathery</li>
+            <li>Woody</li>
         </stuffCategories>
         <tools>
             <li>
@@ -338,11 +338,16 @@
             <Steel>20</Steel>
 	      		<ComponentDryad_Barkskin>2</ComponentDryad_Barkskin>
         </costList>
-        <recipeUsers>
-          <li>GroveCrucible</li>
-        </recipeUsers>
-		<recipeMaker>
+    <recipeMaker>
 			<researchPrerequisite>DryadicArmaments</researchPrerequisite>
+			<recipeUsers>
+				<li>GroveCrucible</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+				<Plants>5</Plants>
+			</skillRequirements>
+			<displayPriority>510</displayPriority>
 		</recipeMaker>
         <statBases>
             <MaxHitPoints>150</MaxHitPoints>
@@ -391,6 +396,88 @@
         </comps>
     </ThingDef>
 
+<!-- Berrymaker Dryad -->
 
+<ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Bow_Poisonberry</defName>
+    <label>poisonberry bow</label>
+    <description>A bow wrapped in vine, poisonberries are mounted at the tips of each arrow allowing it to cause toxic buildup in a target.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/PoisonberryBow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Small</soundInteract>
+    <costList>
+      <WoodLog>30</WoodLog>
+      <ComponentDryad_Berrymaker>3</ComponentDryad_Berrymaker>
+    </costList>
+    <statBases>
+      <WorkToMake>2400</WorkToMake>
+      <Mass>0.8</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <recipeMaker>
+      <recipeUsers>
+        <li>GroveCrucible</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+      </skillRequirements>
+      <displayPriority>510</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ArrowToxic</defaultProjectile>
+        <warmupTime>1.35</warmupTime>
+        <range>24.9</range>
+        <soundCast>Bow_Small</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+    <rotateInShelves>false</rotateInShelves>
+  </ThingDef>
+
+<DamageDef ParentName="BaseProjectileNeolithic">
+    <defName>ArrowToxic</defName>
+    <label>toxic arrow</label>
+    <additionalHediffs>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Toxicberry</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+      <li>
+        <hediff>ToxicBuildup</hediff>
+        <severityPerDamageDealt>0.0055</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+        <inverseStatScaling>true</inverseStatScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+  </DamageDef>
 
 </Defs>

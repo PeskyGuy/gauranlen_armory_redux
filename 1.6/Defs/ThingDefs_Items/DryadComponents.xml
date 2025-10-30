@@ -129,6 +129,38 @@
     <allowedArchonexusCount>5</allowedArchonexusCount>
 </ThingDef>
 
+<!-- Berrymaker Dryad -->
+
+<ThingDef ParentName="ResourceBase">
+<defName>ComponentDryad_Berrymaker</defName>
+    <label>nourishing essence</label>
+    <description>The essence of a fallen berrymaker dryad, made from the parts of its corpse.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentDryad_Berrymaker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Pickup</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>200</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+</ThingDef>
+
 <!-- Woodmaker Dryad -->
 
 <ThingDef ParentName="ResourceBase">

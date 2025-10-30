@@ -12,7 +12,7 @@
       <li>Foods</li>
     </thingCategories>
     <graphicData>
-      <texPath>Things/Item/Resource/Clawmarrow/Clawmarrow</texPath>
+      <texPath>Things/Item/Resource/Clawmarrow</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>false</socialPropernessMatters>
@@ -55,7 +55,7 @@
       <li>Foods</li>
     </thingCategories>
     <graphicData>
-      <texPath>Things/Item/Resource/CorpseMash/CorpseMash</texPath>
+      <texPath>Things/Item/Resource/CorpseMash</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>false</socialPropernessMatters>
@@ -87,6 +87,36 @@
     <allowedArchonexusCount>200</allowedArchonexusCount>
   </ThingDef>
 
-
+<ThingDef ParentName="OrganicProductBase">
+    <defName>NutritionTonic</defName>
+    <label>nutrition tonic</label>
+    <description>A tonic with extracted from berries and berrymaker essence forming a healthy and sweet drink.</description>
+    <possessionCount>10</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/NutritionTonic</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>8.0</MarketValue>
+      <Mass>0.1</Mass>
+      <Nutrition>0.9</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.03</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <ingestible>
+      <foodType>Processed, Fluid</foodType>
+      <preferability>MealFine</preferability>
+      <joy>0.2</joy>
+      <joyKind>Gluttonous</joyKind>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <lowPriorityCaravanFood>true</lowPriorityCaravanFood>
+      <babiesCanIngest>true</babiesCanIngest>
+    </ingestible>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <allowedArchonexusCount>20</allowedArchonexusCount>
+  </ThingDef>
 
 </Defs>

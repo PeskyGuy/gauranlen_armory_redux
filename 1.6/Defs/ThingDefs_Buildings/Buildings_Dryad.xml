@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<!-- Dryad Stuff-->
+  <!-- Dryad Stuff-->
 
-<ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>SolarDryadPod</defName>
     <label>solar dryad pod</label>
     <description>Produces electricity from sunlight.</description>
@@ -54,10 +54,11 @@
     <constructEffect>ConstructMetal</constructEffect>
   </ThingDef>
 
-<ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>BurdenEffigy</defName>
     <label>BurdenEffigy</label>
-    <description>Slowly generates burdenweave, through a painful process of the half-living dryad shedding its own skin.</description>
+    <description>Slowly generates burdenweave, through a painful process of the half-living dryad
+      shedding its own skin.</description>
     <graphicData>
       <texPath>Things/Building/Special/BurdenEffigy</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -71,7 +72,7 @@
       <li>BuildingsSpecial</li>
     </thingCategories>
     <costList>
-      <Wood>200</Wood>
+      <WoodLog>200</WoodLog>
       <Steel>80</Steel>
       <ComponentDryad_Carrier>6</ComponentDryad_Carrier>
     </costList>
@@ -83,12 +84,15 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>100</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
       <li Class="CompProperties_Spawner">
         <requiresPower>true</requiresPower>
         <thingToSpawn>BurdenweaveCloth</thingToSpawn>
         <spawnCount>75</spawnCount>
-        <spawnIntervalRange><min>600000</min><max>600000</max></spawnIntervalRange>
+        <spawnIntervalRange>
+          <min>600000</min>
+          <max>600000</max>
+        </spawnIntervalRange>
         <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
         <showMessageIfOwned>true</showMessageIfOwned>
       </li>
@@ -120,19 +124,22 @@
     </tradeTags>
   </ThingDef>
 
-<!-- Research Stuff -->
+  <!-- Research Stuff -->
 
- <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>Gau_Symbiont</defName>
     <label>gauranlen symbiont</label>
-    <description>A half-dead immature dryad that attaches to a log and unlocks new dryadic technology, it speaks to you.</description>
+    <description>A half-dead immature dryad that attaches to a log and unlocks new dryadic
+      technology, it speaks to you.</description>
     <graphicData>
       <texPath>Things/Building/Misc/GauSymbiont</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>1</drawSize>
     </graphicData>
     <uiIconScale>0.85</uiIconScale>
-    <researchPrerequisites><li>Rootcraft</li></researchPrerequisites>
+    <researchPrerequisites>
+      <li>Rootcraft</li>
+    </researchPrerequisites>
     <size>(1,1)</size>
     <rotatable>true</rotatable>
     <altitudeLayer>Building</altitudeLayer>
@@ -174,7 +181,6 @@
     </placeWorkers>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
   </ThingDef>
-
 
 
 </Defs>

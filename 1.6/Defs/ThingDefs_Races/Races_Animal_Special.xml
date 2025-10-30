@@ -205,7 +205,7 @@
       <lifeStageAges>
         <li>
           <def>AnimalAdult</def>
-          <soundWounded>Pawn_Spelopede_Wounded</soundWounded>
+          <soundWounded>Pawn_Spelopede_Pain</soundWounded>
           <soundCall>Pawn_Spelopede_Call</soundCall>
         </li>
       </lifeStageAges>
