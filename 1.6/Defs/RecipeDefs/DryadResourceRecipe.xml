@@ -3,13 +3,13 @@
 
 <RecipeDef>
     <defName>Make_WoodFromBarkskin</defName>
-    <label>make wood from barkskin essence</label>
-    <description>Make wood from barkskin essence.</description>
-    <jobString>Making wood from barkskin essence.</jobString>
+    <label>make wood from tough essence</label>
+    <description>Make wood from tough essence.</description>
+    <jobString>Making wood from tough essence.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>1000</workAmount>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>50</workAmount>
     <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
     <ingredients>
       <li>
@@ -27,7 +27,45 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <WoodLog>50</WoodLog>
+      <WoodLog>75</WoodLog>
+    </products>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>2</Crafting>s
+      <Plants>3</Plants>
+    </skillRequirements>
+    <workSkill>Plants</workSkill>
+    <displayPriority>10</displayPriority>
+  </RecipeDef>
+
+
+<RecipeDef>
+    <defName>Make_Grovebark</defName>
+    <label>make grovebark from tough essence</label>
+    <description>Make grovebark from tough essence.</description>
+    <jobString>Making grovebark from tough essence.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>500</workAmount>
+    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentDryad_Barkskin</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentDryad_Barkskin</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grovebark>50</Grovebark>
     </products>
     <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
@@ -38,5 +76,80 @@
     <displayPriority>10</displayPriority>
   </RecipeDef>
 
+<RecipeDef>
+    <defName>Make_Healroot</defName>
+    <label>make healroot from vital essence</label>
+    <description>Make healroot from vital essence.</description>
+    <jobString>Making healroot from vital essence.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>125</workAmount>
+    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentDryad_Medicinemaker</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentDryad_Medicinemaker</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MedicineHerbal>5</MedicineHerbal>
+    </products>
+    <researchPrerequisite>Rootcraft</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>3</Crafting>
+      <Plants>4</Plants>
+    </skillRequirements>
+    <workSkill>Plants</workSkill>
+    <displayPriority>10</displayPriority>
+  </RecipeDef>
+
+<RecipeDef>
+    <defName>Make_PotentHealroot</defName>
+    <label>make potent healroot from vital essence</label>
+    <description>Make potent healroot from vital essence.</description>
+    <jobString>Making potent healroot from vital essence.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>225</workAmount>
+    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentDryad_Medicinemaker</li>
+            <li>MedicineHerbal</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentDryad_Medicinemaker</li>
+        <li>MedicineHerbal</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MedicinePotent>4</MedicinePotent>
+    </products>
+    <researchPrerequisite>DryadicAlchemy</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>5</Crafting>
+      <Plants>6</Plants>
+    </skillRequirements>
+    <workSkill>Plants</workSkill>
+    <displayPriority>10</displayPriority>
+  </RecipeDef>
 
 </Defs>

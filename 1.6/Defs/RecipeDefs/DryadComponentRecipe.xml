@@ -38,7 +38,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <ComponentDryad_Basic>1</ComponentDryad_Basic>
+      <ComponentDryad_Basic>2</ComponentDryad_Basic>
     </products>
     <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
@@ -86,7 +86,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <ComponentDryad_Carrier>1</ComponentDryad_Carrier>
+      <ComponentDryad_Carrier>2</ComponentDryad_Carrier>
     </products>
     <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
@@ -134,7 +134,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <ComponentDryad_Barkskin>1</ComponentDryad_Barkskin>
+      <ComponentDryad_Barkskin>2</ComponentDryad_Barkskin>
     </products>
     <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
@@ -182,7 +182,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <ComponentDryad_Woodmaker>1</ComponentDryad_Woodmaker>
+      <ComponentDryad_Woodmaker>2</ComponentDryad_Woodmaker>
     </products>
     <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
@@ -230,7 +230,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <ComponentDryad_Medicinemaker>1</ComponentDryad_Medicinemaker>
+      <ComponentDryad_Medicinemaker>2</ComponentDryad_Medicinemaker>
     </products>
     <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>
@@ -278,7 +278,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <ComponentDryad_Gaumaker>1</ComponentDryad_Gaumaker>
+      <ComponentDryad_Gaumaker>2</ComponentDryad_Gaumaker>
     </products>
     <researchPrerequisite>Rootcraft</researchPrerequisite>
     <skillRequirements>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="ResourceVerbBase">
+    <defName>Grovebark</defName>
+    <label>grovebark</label>
+    <description>Hardwood from a grove effigy. Useful for building structures and weapons. Screaming faces are etched into the wood.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Grovebark</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>0.6</Mass> 
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.2</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.65</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.65</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.50</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.60</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>10</minRewardCount>
+    <stuffProps>
+      <stuffAdjective>wooden</stuffAdjective>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>0.20</commonality>
+      <color>(181,171,159)</color>
+      <constructEffect>ConstructWood</constructEffect>
+      <appearance>Planks</appearance>
+      <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
+      <statFactors>
+        <MaxHitPoints>0.75</MaxHitPoints>
+        <Beauty>-2</Beauty>
+        <Flammability>1</Flammability>
+        <WorkToMake>0.8</WorkToMake>
+        <WorkToBuild>0.7</WorkToBuild>
+        <DoorOpenSpeed>1.3</DoorOpenSpeed>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <isTechHediff>true</isTechHediff>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleeBlunt</li>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>log</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <allowedArchonexusCount>150</allowedArchonexusCount>
+  </ThingDef>
+
+<ThingDef ParentName="MedicineBase">
+    <defName>MedicinePotent</defName>
+    <label>potent healroot</label>
+    <description>A pack of potent herbal medicine crafted by infusing healroot with vital essences extracted from medicinemaker dryads. The dryadic compounds significantly enhance the healing properties, making it nearly as effective as industrial pharmaceuticals while retaining its natural origins.</description>
+    <possessionCount>3</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/Medicine/MedicinePotent</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <MarketValue>18</MarketValue>
+      <Mass>0.35</Mass>
+      <Flammability>1.3</Flammability>
+      <MedicalPotency>0.90</MedicalPotency>
+      <MedicalQualityMax>1.00</MedicalQualityMax>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>150</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <allowedArchonexusCount>20</allowedArchonexusCount>
+  </ThingDef>
+
+</Defs>

@@ -261,4 +261,168 @@
     <removesHediff>Barkplate</removesHediff>
   </RecipeDef>
 
+<!-- Berrymaker Dryad -->
+
+<HediffDef ParentName="ImplantHediffBase">
+    <defName>BerrymakerPods</defName>
+    <label>berrymaker pods</label>
+    <labelNoun>berrymaker pods implant</labelNoun>
+    <description>Installed berrymaker implant. It allows the user to periodically grow berries on their back.</description>
+    <descriptionHyperlinks><ThingDef>BerrymakerPods</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>ClawerGlands</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+        <statFactors>
+          <MoveSpeed>-0.2</MoveSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  <comps>
+	<li Class="VEF.AnimalBehaviours.HediffCompProperties_Spawner">
+		<thingToSpawn>RawBerries</thingToSpawn>
+		<spawnCount>12</spawnCount>
+		<spawnIntervalRange>25000~45000</spawnIntervalRange>
+		<spawnMaxAdjacent>30</spawnMaxAdjacent>
+		<spawnForbidden>false</spawnForbidden>
+		<showMessageIfOwned>false</showMessageIfOwned>		
+	</li>
+  </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartDryadicPartBase">
+    <defName>BerrymakerPods</defName>
+    <label>berrymaker pods</label>
+    <description>A set of pods extracted from a berrymaker dryad, these are implanted into the back of a person.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBerrymakerPods</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Steel>15</Steel>
+      <WoodLog>20</WoodLog>
+      <ComponentDryad_Barkskin>3</ComponentDryad_Barkskin>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Grafting</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallBerrymakerPods</defName>
+    <label>install berrymaker pods</label>
+    <description>Install berrymaker pods.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BerrymakerPods</ThingDef>
+      <HediffDef>BerrymakerPods</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing berrymaker pods.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BerrymakerPods</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BerrymakerPods</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BerrymakerPods</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveBerrymakerPods</defName>
+    <label>remove berrymaker pods</label>
+    <description>Remove berrymaker pods.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BerrymakerPods</ThingDef>
+      <HediffDef>BerrymakerPods</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing berrymaker pods.</jobString>
+    <removesHediff>BerrymakerPods</removesHediff>
+  </RecipeDef>
+
+<!-- Medicinemaker Dryad -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>VitalityEnhancer</defName>
+    <label>vitality enhancer</label>
+    <labelNoun>a vitality enhancer</labelNoun>
+    <description>An installed vitality enhancer. Grafted glands from a medicinemaker dryad that release natural healing compounds into the bloodstream. These dryadic essences stimulate both wound healing and the body's immune response, helping fight off diseases and recover from injuries more effectively. This implant is a tribal alternative to advanced imperial bionics, using the natural healing properties of dryads.</description>
+    <descriptionHyperlinks><ThingDef>VitalityEnhancer</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>VitalityEnhancer</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <naturalHealingFactor>1.2</naturalHealingFactor>
+        <statOffsets>
+          <ImmunityGainSpeed>0.03</ImmunityGainSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartDryadicPartBase">
+    <defName>VitalityEnhancer</defName>
+    <label>vitality enhancer</label>
+    <description>Grafted glands from a medicinemaker dryad that release natural healing compounds into the bloodstream. These dryadic essences stimulate both wound healing and the body's immune response, helping fight off diseases and recover from injuries more effectively.</description>
+    <descriptionHyperlinks><RecipeDef>InstallVitalityEnhancer</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Jade>15</Jade>
+      <ComponentDryad_Medicinemaker>4</ComponentDryad_Medicinemaker>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Grafting</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallVitalityEnhancer</defName>
+    <label>install vitality enhancer</label>
+    <description>Install a vitality enhancer.</description>
+    <descriptionHyperlinks>
+      <ThingDef>VitalityEnhancer</ThingDef>
+      <HediffDef>VitalityEnhancer</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing vitality enhancer.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VitalityEnhancer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VitalityEnhancer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>VitalityEnhancer</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveVitalityEnhancer</defName>
+    <label>remove vitality enhancer</label>
+    <description>Remove vitality enhancer.</description>
+    <descriptionHyperlinks>
+      <ThingDef>VitalityEnhancer</ThingDef>
+      <HediffDef>VitalityEnhancer</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing vitality enhancer.</jobString>
+    <removesHediff>VitalityEnhancer</removesHediff>
+  </RecipeDef>
+
+
 </Defs>

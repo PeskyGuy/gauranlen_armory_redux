@@ -56,7 +56,7 @@
       </disallowedThingDefs>
     </defaultIngredientFilter>
     <workSkill>Cooking</workSkill>
-    <researchPrerequisite>SpagyricAlchemy</researchPrerequisite>
+    <researchPrerequisite>DryadicAlchemy</researchPrerequisite>
     <displayPriority>1440</displayPriority>
   </RecipeDef>
 

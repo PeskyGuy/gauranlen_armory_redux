@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj": {}
+    "D:\\CodeGarbage\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj": {}
   },
   "projects": {
-    "E:\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj": {
+    "D:\\CodeGarbage\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
+        "projectUniqueName": "D:\\CodeGarbage\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
         "projectName": "PeskysGauranlenArmoryRedux",
-        "projectPath": "E:\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
+        "projectPath": "D:\\CodeGarbage\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
         "packagesPath": "C:\\Users\\Xander\\.nuget\\packages\\",
-        "outputPath": "E:\\Local Repos\\gauranlen_armory_redux\\Source\\obj\\",
+        "outputPath": "D:\\CodeGarbage\\Local Repos\\gauranlen_armory_redux\\Source\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Xander\\AppData\\Roaming\\NuGet\\NuGet.Config"

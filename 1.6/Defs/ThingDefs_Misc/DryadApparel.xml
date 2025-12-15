@@ -97,7 +97,7 @@
 <ThingDef ParentName="ApparelBase">
     <defName>Apparel_WardBelt</defName>
     <label>ward belt</label>
-    <description>A belt that projects psychic energy outwards, stopping projectile attacks from both sides. Made from a gauranlen seed and barkskin essences.</description>
+    <description>A belt that projects psychic energy outwards, stopping projectile attacks from both sides. Made from a gauranlen seed and tough essences.</description>
     <thingClass>Apparel</thingClass>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/WardBelt/WardBelt</texPath>
@@ -123,13 +123,13 @@
     </costList>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-      <researchPrerequisite>Rootcraft</researchPrerequisite>
+      <researchPrerequisite>DryadicArmaments</researchPrerequisite>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
       <recipeUsers>
-        <li>TableRending</li>
+        <li>GroveCrucible</li>
       </recipeUsers>
       <useIngredientsForColor>false</useIngredientsForColor>
       <skillRequirements>
