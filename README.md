@@ -79,8 +79,6 @@ From here you can research the rest of the small tech tree for the mod and creat
 - [ ] Bloodmaker: Bloodwrought Effigy (produces hemogen)
 - [ ] Ferritemaker: Suppressor Effigy (suppresses anomalies), Currentmaker Effigy (electricity from bioferrite)
 
-## Priority 2: Advanced Systems
-
 ### Awakened Essences System
 - [ ] Research: Awakened Essences (requires all previous research)
 - [ ] Building: Life Crucible (made from awakened essences + jade + gold)
