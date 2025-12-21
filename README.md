@@ -132,8 +132,3 @@ From here you can research the rest of the small tech tree for the mod and creat
 - [x] Textiles (Burdenweave)
 - [x] Resources (Grovebark, Potent Healroot)
 - [x] Apparel (Carrier Pack, Ward Belt)
-
-### C# Components
-- [x] Sunkeeper transformation system
-- [x] Solar power generation
-- [x] Custom power plant component
