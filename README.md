@@ -81,7 +81,7 @@ From here you can research the rest of the small tech tree for the mod and creat
 
 ### Awakened Essences System
 - [ ] Research: Awakened Essences (requires all previous research)
-- [ ] Building: Gauranlen Hearth (made from awakened essences + jade + gold)
+- [ ] Building: Gauranlen Hearth (made from essences + jade + gold)
 - [ ] Mechanics: Ritual system for creating awakened products
 - [ ] Awakened Products:
   - [ ] Ideology Dryads: Titan's Draught, Rending Claw, Bulwark's Mantle, Sanctuary Fruit, Blessing of Life, Gaiawood, Gauranlen Relic
