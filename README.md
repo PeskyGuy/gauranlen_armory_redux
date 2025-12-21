@@ -13,7 +13,7 @@ From here you can research the rest of the small tech tree for the mod and creat
 
 # TODO List
 
-### Rootcraft Products (High Priority)
+### Rootcraft Products
 - [ ] Sunkeeper: Sunpod (nourishing fruit + workspeed bonus), Keeperbark (building material), Sunroot (power conduit)
 - [ ] Firemaker: Chemfruit (mood buff + consciousness loss)
 - [ ] Ironback: Terraferrite (advanced material for weapons/armor)
