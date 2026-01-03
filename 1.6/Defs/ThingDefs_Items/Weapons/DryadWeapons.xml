@@ -454,7 +454,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>11</power>
+        <power>5</power>
         <cooldownTime>2.5</cooldownTime>
       </li>
     </tools>

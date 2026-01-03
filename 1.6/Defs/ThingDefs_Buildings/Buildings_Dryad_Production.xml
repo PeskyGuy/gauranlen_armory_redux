@@ -22,8 +22,8 @@
     <castEdgeShadows>true</castEdgeShadows>
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
     <costList>
-      <Steel>150</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <WoodLog>150</WoodLog>
+      <ComponentDryad_Basic>5</ComponentDryad_Basic>
     </costList>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
@@ -118,7 +118,7 @@
     <thingCategories Inherit="false" />
     <size>(5,2)</size>
     <costList>
-      <Steel>100</Steel>
+      <Steel>50</Steel>
       <WoodLog>100</WoodLog>
       <GauranlenSeed>1</GauranlenSeed>
       <ComponentDryad_Gaumaker>1</ComponentDryad_Gaumaker>

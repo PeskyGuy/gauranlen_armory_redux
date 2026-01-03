@@ -92,7 +92,7 @@
       <li Class="CompProperties_Spawner">
         <requiresPower>false</requiresPower>
         <thingToSpawn>VigorTonic</thingToSpawn>
-        <spawnCount>75</spawnCount>
+        <spawnCount>2</spawnCount>
         <spawnIntervalRange><min>600000</min><max>600000</max></spawnIntervalRange>
         <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
         <showMessageIfOwned>true</showMessageIfOwned>

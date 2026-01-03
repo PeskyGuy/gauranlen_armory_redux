@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = PeskysGauranlenArmoryRedux
-build_property.ProjectDir = D:\CodeGarbage\Local Repos\gauranlen_armory_redux\Source\
+build_property.ProjectDir = D:\Coding\gauranlen_armory_redux\Source\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

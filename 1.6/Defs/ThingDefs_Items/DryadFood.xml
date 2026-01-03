@@ -15,7 +15,7 @@
       <texPath>Things/Item/Resource/Clawmarrow</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <socialPropernessMatters>false</socialPropernessMatters>
+    <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
       <MarketValue>1.7</MarketValue>
       <Mass>0.024</Mass>
@@ -58,7 +58,7 @@
       <texPath>Things/Item/Resource/CorpseMash</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <socialPropernessMatters>false</socialPropernessMatters>
+    <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
       <MarketValue>1.7</MarketValue>
       <Mass>0.024</Mass>

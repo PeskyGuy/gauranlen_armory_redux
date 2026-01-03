@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CodeGarbage\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj": {}
+    "D:\\Coding\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj": {}
   },
   "projects": {
-    "D:\\CodeGarbage\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj": {
+    "D:\\Coding\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CodeGarbage\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
+        "projectUniqueName": "D:\\Coding\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
         "projectName": "PeskysGauranlenArmoryRedux",
-        "projectPath": "D:\\CodeGarbage\\Local Repos\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
-        "packagesPath": "C:\\Users\\Xander\\.nuget\\packages\\",
-        "outputPath": "D:\\CodeGarbage\\Local Repos\\gauranlen_armory_redux\\Source\\obj\\",
+        "projectPath": "D:\\Coding\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
+        "packagesPath": "C:\\Users\\Pesky\\.nuget\\packages\\",
+        "outputPath": "D:\\Coding\\gauranlen_armory_redux\\Source\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Xander\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Pesky\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net472"
@@ -38,12 +38,20 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net472": {
           "targetAlias": "net472",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Carrier Dryad -->
+
+<HediffDef>
+		<defName>Buff_Vigor</defName>
+		<label>invigorated</label>
+		<description>The strength of the carrier dryad is rushing through this pawn's veins.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.15</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>waning</label>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+					<MoveSpeed>0.6</MoveSpeed>
+					<CarryingCapacity>0.8</CarryingCapacity>
+				</statFactors>
+			</li>
+			<li>
+				<label>invigorated</label>
+				<minSeverity>0.65</minSeverity>
+				<statFactors>
+					<MoveSpeed>1.2</MoveSpeed>
+					<CarryingCapacity>1.6</CarryingCapacity>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+<!-- Clawer Dryad -->
+
+<HediffDef>
+		<defName>Buff_Feral</defName>
+		<label>enraged</label>
+		<description>The rage of the clawer dryad is rushing through this pawn's veins.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.20</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>waning</label>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+					<MeleeDamageFactor>1.1</MeleeDamageFactor>
+					<MeleeDodgeChance>1.2</MeleeDodgeChance>
+				</statFactors>
+			</li>
+			<li>
+				<label>enraged</label>
+				<minSeverity>1</minSeverity>
+				<statFactors>
+					<MeleeDamageFactor>1.7</MeleeDamageFactor>
+					<MeleeDodgeChance>1.4</MeleeDodgeChance>
+				</statFactors>
+				<statOffsets>
+					<MentalBreakThreshold>0.1</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+<!-- Barkskin Dryad -->
+
+<HediffDef>
+		<defName>Buff_Bark</defName>
+		<label>enraged</label>
+		<description>The rage of the clawer dryad is rushing through this pawn's veins.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.20</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>waning</label>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+					<MeleeDamageFactor>1.1</MeleeDamageFactor>
+					<MeleeDodgeChance>1.2</MeleeDodgeChance>
+				</statFactors>
+			</li>
+			<li>
+				<label>enraged</label>
+				<minSeverity>1</minSeverity>
+				<statFactors>
+					<MeleeDamageFactor>1.7</MeleeDamageFactor>
+					<MeleeDodgeChance>1.4</MeleeDodgeChance>
+				</statFactors>
+				<statOffsets>
+					<MentalBreakThreshold>0.1</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+<!-- Berrymaker Dryad -->
+
+<!-- Medicinemaker Dryad -->
+
+<!-- Woodmaker Dryad -->
+
+<!-- Gaumaker Dryad -->
+
+</Defs>

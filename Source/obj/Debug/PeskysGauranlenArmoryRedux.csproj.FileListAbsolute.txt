@@ -12,3 +12,10 @@ E:\Local Repos\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedu
 E:\Local Repos\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.csproj.CoreCompileInputs.cache
 E:\Local Repos\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.dll
 E:\Local Repos\gauranlen_armory_redux\1.6\Assemblies\PeskysGauranlenArmoryRedux.dll
+D:\Coding\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.csproj.AssemblyReference.cache
+D:\Coding\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.AssemblyInfoInputs.cache
+D:\Coding\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.AssemblyInfo.cs
+D:\Coding\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.csproj.CoreCompileInputs.cache
+D:\Coding\gauranlen_armory_redux\Source\obj\Debug\PeskysGauranlenArmoryRedux.dll
+D:\Coding\gauranlen_armory_redux\1.6\Assemblies\PeskysGauranlenArmoryRedux.dll

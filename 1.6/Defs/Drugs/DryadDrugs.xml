@@ -1,749 +1,185 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- Tonic Base -->
+
+<ThingDef Name="DryadTonicBase" ParentName="ResourceBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<stackLimit>10</stackLimit>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<orderedTakeGroup>Drug</orderedTakeGroup>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>120</MarketValue>
+			<Mass>0.2</Mass>
+			<Flammability>0.7</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>Drugs</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>Serum</li>
+		</tradeTags>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+			<drugCategory>Medical</drugCategory>
+			<foodType>Processed</foodType>
+			<baseIngestTicks>100</baseIngestTicks>
+			<humanlikeOnly>true</humanlikeOnly>
+			<chairSearchRadius>0</chairSearchRadius>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<showIngestFloatOption>false</showIngestFloatOption>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_UseThing"/>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>1200</listOrder>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useLabel>Use {0_label}</useLabel>
+				<useJob>Ingest</useJob>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="CompProperties_Serum"/>
+		</comps>
+		<recipeMaker>
+			<productCount>1</productCount>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>GroveCrucible</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
 <!-- Carrier Dryad -->
 
-<ThingDef ParentName="MakeableDrugBase">
-    <defName>VigorTonic</defName>
-    <label>vigor tonic</label>
-    <description>A potion created from rendered carrier fat and psychoid leaves, enhances a drinker's strength and speed with a mild potential for addiction.</description>
-    <descriptionHyperlinks>
-      <HediffDef>VigorTonicHigh</HediffDef>
-      <HediffDef>VigorTonicAddiction</HediffDef>
-    </descriptionHyperlinks>
-    <graphicData>
-      <texPath>Things/Item/Drug/VigorTonic</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <rotatable>false</rotatable>
-    <statBases>
-      <WorkToMake>400</WorkToMake>
-      <MarketValue>44</MarketValue>
-      <Mass>0.1</Mass>
-    </statBases>
-    <techLevel>Neolithic</techLevel>
-    <ingestible>
-      <joyKind>Chemical</joyKind>
-      <joy>0.35</joy>
-      <drugCategory>Hard</drugCategory>
-      <foodType>Processed, Fluid</foodType>
-      <baseIngestTicks>80</baseIngestTicks>
-      <ingestSound>Ingest_Beer</ingestSound>
-      <ingestHoldOffsetStanding>
-        <northDefault>
-          <offset>(0.18,0,0)</offset>
-        </northDefault>
-      </ingestHoldOffsetStanding>
-      <ingestCommandString>Drink {0}</ingestCommandString>
-      <ingestReportString>Drinking {0}.</ingestReportString>
-      <useEatingSpeedStat>true</useEatingSpeedStat>
-      <chairSearchRadius>0</chairSearchRadius>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>VigorTonicHigh</hediffDef>
-          <severity>0.5</severity>
-          <toleranceChemical>VigorTonic</toleranceChemical>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetNeed">
-          <need>Rest</need>
-          <offset>0.4</offset>
-          <toleranceChemical>VigorTonic</toleranceChemical>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
-          <offset>0.15</offset>
-        </li>
-      </outcomeDoers>
-    </ingestible>
-    <recipeMaker>
-      <researchPrerequisite>DryadicAlchemy</researchPrerequisite>
-      <recipeUsers>
-        <li>GroveCrucible</li>
-      </recipeUsers>
-      <soundWorking>Recipe_Drug</soundWorking>
-      <displayPriority>1520</displayPriority>
-    </recipeMaker>
-    <costList>
-      <ComponentDryad_Carrier>3</ComponentDryad_Carrier>
-      <PsychoidLeaves>20</PsychoidLeaves>
-    </costList>
-    <comps>
-      <li Class="CompProperties_Drug">
-        <chemical>VigorTonic</chemical>
-        <addictiveness>0.014</addictiveness>
-        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
-        <needLevelOffset>0.8</needLevelOffset>
-        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
-        <listOrder>220</listOrder>
-        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
-        <largeOverdoseChance>0.005</largeOverdoseChance>
-      </li>
-    </comps>
-  </ThingDef>
-
-<HediffDef>
-    <defName>VigorTonicHigh</defName>
-    <hediffClass>Hediff_High</hediffClass>
-    <label>high on vigor tonic</label>
-    <labelNoun>a vigor tonic high</labelNoun>
-    <description>Consumed vigor tonic. It enhances the user's muscle structure with concentrated dryadic sap.</description>
-    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.55</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-      <stages>
-        <li>
-          <painFactor>0.3</painFactor>
-        <statFactors>
-          <MoveSpeed>1.75</MoveSpeed>
-          <CarryingCapacity>2</CarryingCapacity>
-        </statFactors>
-          <capMods>
-            <li>
-              <capacity>Sight</capacity>
-              <offset>0.15</offset>
-            </li>
-          </capMods>
-        </li>
-      </stages>
-  </HediffDef>
-
-<ThoughtDef>
-    <defName>VigorTonicHigh</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>VigorTonicHigh</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-    <stages>
-      <li>
-        <label>high on vigor tonic</label>
-        <description>I feel the strength of the gauranlen flowing through me, I can carry anything.</description>
-        <baseMoodEffect>7</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
-
-<ChemicalDef>
-    <defName>VigorTonic</defName>
-    <label>vigor tonic</label>
-    <addictionHediff>VigorTonicAddiction</addictionHediff>
-    <geneOverdoseChanceFactorResist>0.5</geneOverdoseChanceFactorResist>
-    <geneOverdoseChanceFactorImmune>0</geneOverdoseChanceFactorImmune>
-  </ChemicalDef>
-
-<NeedDef ParentName="DrugAddictionNeedBase">
-    <defName>Chemical_VigorTonic</defName>
-    <needClass>Need_Chemical</needClass>
-    <label>vigor tonic</label>
-    <description>Because of a vigor tonic addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
-    <fallPerDay>0.433</fallPerDay>
-    <listPriority>55</listPriority>
-  </NeedDef>
-
-<HediffDef ParentName="AddictionBase">
-    <defName>VigorTonicAddiction</defName>
-    <label>vigor tonic addiction</label>
-    <description>A chemical addiction to vigor tonic. Long-term presence of vigor tonic has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
-\nWithout regular doses of vigor tonic, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
-    <hediffClass>Hediff_Addiction</hediffClass>
-    <chemicalNeed>Chemical_VigorTonic</chemicalNeed>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.035</severityPerDay>
-        <showDaysToRecover>true</showDaysToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-      </li>
-      <li>
-        <label>withdrawal</label>
-        <painFactor>4</painFactor>
-        <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
-        <statOffsets>
-          <RestFallRateFactor>0.2</RestFallRateFactor>
-        </statOffsets>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.20</offset>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>-0.60</offset>
-          </li>
-          <li>
-            <capacity>Sight</capacity>
-            <offset>-0.10</offset>
-          </li>
-          <li>
-            <capacity>BloodPumping</capacity>
-            <offset>-0.10</offset>
-          </li>
-          <li>
-            <capacity>Manipulation</capacity>
-            <offset>-0.20</offset>
-          </li>
-        </capMods>
-        <mentalStateGivers>
-          <li>
-            <mentalState>Binging_DrugExtreme</mentalState>
-            <mtbDays>40</mtbDays>
-          </li>
-          <li>
-            <mentalState>Wander_Psychotic</mentalState>
-            <mtbDays>10</mtbDays>
-          </li>
-        </mentalStateGivers>
-      </li>
-    </stages>
-  </HediffDef>
-
-  <ThoughtDef>
-    <defName>VigorTonicWithdrawal</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>VigorTonicAddiction</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-    <stages>
-      <li>
-        <visible>false</visible>
-      </li>
-      <li>
-        <label>vigor withdrawal</label>
-        <description>I need it now, the strength is intoxicating, I feel weak without it.</description>
-        <baseMoodEffect>-24</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
-
-<HediffDef ParentName="DrugToleranceBase">
-    <defName>VigorTonicTolerance</defName>
-    <label>vigor tonic tolerance</label>
-    <description>A built-up tolerance to vigor tonic. The more severe this tolerance is, the more vigor tonic it takes to get the same effect.</description>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.015</severityPerDay>
-      </li>
-      <li Class="HediffCompProperties_DrugEffectFactor">
-        <chemical>VigorTonic</chemical>
-      </li>
-    </comps>
-    <hediffGivers>
-      <li Class="HediffGiver_RandomDrugEffect">
-        <hediff>ChemicalDamageModerate</hediff>
-        <severityToMtbDaysCurve>
-          <points>
-            <li>(0.45, 99999)</li>
-            <li>(0.5, 120)</li>
-            <li>(1, 90)</li>
-          </points>
-        </severityToMtbDaysCurve>
-        <partsToAffect>
-          <li>Brain</li>
-        </partsToAffect>
-      </li>
-    </hediffGivers>
-  </HediffDef>
+<ThingDef ParentName="DryadTonicBase">
+		<defName>Tonic_Vigor</defName>
+		<label>vigor tonic</label>
+		<description>An orange extract from carrier dryad muscle tissue mixed with psychoid. Grants temporary strength and endurance to those who consume it.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/VigorTonic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>60</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Buff_Vigor</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>Ingest_Beer</soundOnUsed>
+			</li>
+			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.2</severity>
+				<scaleSeverityByToxResistance>true</scaleSeverityByToxResistance>
+			</li>
+		</comps>
+		<costList>
+			<PsychoidLeaves>15</PsychoidLeaves>
+			<ComponentDryad_Carrier>2</ComponentDryad_Carrier>
+		</costList>
+		<recipeMaker>
+			<workAmount>800</workAmount>
+			<researchPrerequisite>DryadicAlchemy</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
 
 <!-- Clawer Dryad -->
 
-<ThingDef ParentName="MakeableDrugBase">
-    <defName>FeralTonic</defName>
-    <label>feral tonic</label>
-    <description>A potion created from rendered clawer marrow and psychoid leaves, enhances a drinker's combat capabilities with a high potential for addiction.</description>
-    <descriptionHyperlinks>
-      <HediffDef>FeralTonicHigh</HediffDef>
-      <HediffDef>FeralTonicAddiction</HediffDef>
-    </descriptionHyperlinks>
-    <graphicData>
-      <texPath>Things/Item/Drug/FeralTonic</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <rotatable>false</rotatable>
-    <statBases>
-      <WorkToMake>600</WorkToMake>
-      <MarketValue>74</MarketValue>
-      <Mass>0.1</Mass>
-    </statBases>
-    <techLevel>Neolithic</techLevel>
-    <ingestible>
-      <joyKind>Chemical</joyKind>
-      <joy>0.45</joy>
-      <drugCategory>Hard</drugCategory>
-      <foodType>Processed, Fluid</foodType>
-      <baseIngestTicks>80</baseIngestTicks>
-      <ingestSound>Ingest_Beer</ingestSound>
-      <ingestHoldOffsetStanding>
-        <northDefault>
-          <offset>(0.18,0,0)</offset>
-        </northDefault>
-      </ingestHoldOffsetStanding>
-      <ingestCommandString>Drink {0}</ingestCommandString>
-      <ingestReportString>Drinking {0}.</ingestReportString>
-      <useEatingSpeedStat>true</useEatingSpeedStat>
-      <chairSearchRadius>0</chairSearchRadius>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>FeralTonicHigh</hediffDef>
-          <severity>0.7</severity>
-          <toleranceChemical>FeralTonic</toleranceChemical>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetNeed">
-          <need>Rest</need>
-          <offset>0.6</offset>
-          <toleranceChemical>FeralTonic</toleranceChemical>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
-          <offset>0.15</offset>
-        </li>
-      </outcomeDoers>
-    </ingestible>
-    <recipeMaker>
-      <researchPrerequisite>DryadicAlchemy</researchPrerequisite>
-      <recipeUsers>
-        <li>GroveCrucible</li>
-      </recipeUsers>
-      <soundWorking>Recipe_Drug</soundWorking>
-      <displayPriority>1520</displayPriority>
-    </recipeMaker>
-    <costList>
-      <ComponentDryad_Clawer>4</ComponentDryad_Clawer>
-      <PsychoidLeaves>50</PsychoidLeaves>
-    </costList>
-    <comps>
-      <li Class="CompProperties_Drug">
-        <chemical>FeralTonic</chemical>
-        <addictiveness>0.054</addictiveness>
-        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
-        <needLevelOffset>0.8</needLevelOffset>
-        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
-        <listOrder>230</listOrder>
-        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
-        <largeOverdoseChance>0.005</largeOverdoseChance>
-      </li>
-    </comps>
-  </ThingDef>
-
-<HediffDef>
-    <defName>FeralTonicHigh</defName>
-    <hediffClass>Hediff_High</hediffClass>
-    <label>high on feral tonic</label>
-    <labelNoun>a feral tonic high</labelNoun>
-    <description>Consumed feral tonic. Enhances all senses related to combat.</description>
-    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.85</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-      <stages>
-        <li>
-          <painFactor>0.5</painFactor>
-        <statFactors>
-          <MoveSpeed>1.5</MoveSpeed>
-          <MeleeDamageFactor>1.4</MeleeDamageFactor>
-        </statFactors>
-          <capMods>
-            <li>
-              <capacity>Sight</capacity>
-              <offset>0.35</offset>
-            </li>
-          </capMods>
-        </li>
-      </stages>
-  </HediffDef>
-
-<ThoughtDef>
-    <defName>FeralTonicHigh</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>FeralTonicHigh</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-    <stages>
-      <li>
-        <label>high on feral tonic</label>
-        <description>I have become the vessel for dryadic rage.</description>
-        <baseMoodEffect>9</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
-
-<ChemicalDef>
-    <defName>FeralTonic</defName>
-    <label>feral tonic</label>
-    <addictionHediff>FeralTonicAddiction</addictionHediff>
-    <geneOverdoseChanceFactorResist>0.5</geneOverdoseChanceFactorResist>
-    <geneOverdoseChanceFactorImmune>0</geneOverdoseChanceFactorImmune>
-  </ChemicalDef>
-
-<NeedDef ParentName="DrugAddictionNeedBase">
-    <defName>Chemical_FeralTonic</defName>
-    <needClass>Need_Chemical</needClass>
-    <label>vigor tonic</label>
-    <description>Because of a vigor tonic addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
-    <fallPerDay>0.433</fallPerDay>
-    <listPriority>55</listPriority>
-  </NeedDef>
-
-<HediffDef ParentName="AddictionBase">
-    <defName>FeralTonicAddiction</defName>
-    <label>feral tonic addiction</label>
-    <description>A chemical addiction to feral tonic. Long-term presence of feral tonic has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
-\nWithout regular doses of feral tonic, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
-    <hediffClass>Hediff_Addiction</hediffClass>
-    <chemicalNeed>Chemical_FeralTonic</chemicalNeed>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.025</severityPerDay>
-        <showDaysToRecover>true</showDaysToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-      </li>
-      <li>
-        <label>withdrawal</label>
-        <painFactor>4</painFactor>
-        <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
-        <statOffsets>
-          <RestFallRateFactor>0.2</RestFallRateFactor>
-        </statOffsets>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.20</offset>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>-0.70</offset>
-          </li>
-          <li>
-            <capacity>Sight</capacity>
-            <offset>-0.20</offset>
-          </li>
-          <li>
-            <capacity>BloodPumping</capacity>
-            <offset>-0.10</offset>
-          </li>
-          <li>
-            <capacity>Manipulation</capacity>
-            <offset>-0.50</offset>
-          </li>
-        </capMods>
-        <mentalStateGivers>
-          <li>
-            <mentalState>Binging_DrugExtreme</mentalState>
-            <mtbDays>20</mtbDays>
-          </li>
-          <li>
-            <mentalState>Wander_Psychotic</mentalState>
-            <mtbDays>10</mtbDays>
-          </li>
-        </mentalStateGivers>
-      </li>
-    </stages>
-  </HediffDef>
-
-  <ThoughtDef>
-    <defName>FeralTonicWithdrawal</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>FeralTonicAddiction</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-    <stages>
-      <li>
-        <visible>false</visible>
-      </li>
-      <li>
-        <label>feral withdrawal</label>
-        <description>I can't move properly... I need the dryad's power.</description>
-        <baseMoodEffect>-29</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
-
-<HediffDef ParentName="DrugToleranceBase">
-    <defName>FeralTonicTolerance</defName>
-    <label>feral tonic tolerance</label>
-    <description>A built-up tolerance to feral tonic. The more severe this tolerance is, the more feral tonic it takes to get the same effect.</description>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.010</severityPerDay>
-      </li>
-      <li Class="HediffCompProperties_DrugEffectFactor">
-        <chemical>FeralTonic</chemical>
-      </li>
-    </comps>
-    <hediffGivers>
-      <li Class="HediffGiver_RandomDrugEffect">
-        <hediff>ChemicalDamageModerate</hediff>
-        <severityToMtbDaysCurve>
-          <points>
-            <li>(0.45, 99999)</li>
-            <li>(0.5, 120)</li>
-            <li>(1, 90)</li>
-          </points>
-        </severityToMtbDaysCurve>
-        <partsToAffect>
-          <li>Brain</li>
-        </partsToAffect>
-      </li>
-    </hediffGivers>
-  </HediffDef>
+<ThingDef ParentName="DryadTonicBase">
+		<defName>Tonic_Feral</defName>
+		<label>feral tonic</label>
+		<description>A red fluid extracted from a clawer dryad's adrenal glands mixed with psychoid. Grants temporary strength and endurance to those who consume it.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/FeralTonic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>80</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Buff_Feral</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>Ingest_Beer</soundOnUsed>
+			</li>
+			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.4</severity>
+				<scaleSeverityByToxResistance>true</scaleSeverityByToxResistance>
+			</li>
+		</comps>
+		<costList>
+			<PsychoidLeaves>25</PsychoidLeaves>
+			<ComponentDryad_Clawer>2</ComponentDryad_Clawer>
+		</costList>
+		<recipeMaker>
+			<workAmount>800</workAmount>
+			<researchPrerequisite>DryadicAlchemy</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
 
 <!-- Barkskin Dryad -->
 
-<ThingDef ParentName="MakeableDrugBase">
-    <defName>BarkTonic</defName>
-    <label>bark tonic</label>
-    <description>A potion created from tough essence and psychoid leaves, this tonic hardens the skin but slows the user.</description>
-    <descriptionHyperlinks>
-      <HediffDef>BarkTonicHigh</HediffDef>
-      <HediffDef>BarkTonicAddiction</HediffDef>
-    </descriptionHyperlinks>
-    <graphicData>
-      <texPath>Things/Item/Drug/BarkTonic</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <rotatable>false</rotatable>
-    <statBases>
-      <WorkToMake>500</WorkToMake>
-      <MarketValue>74</MarketValue>
-      <Mass>0.1</Mass>
-    </statBases>
-    <techLevel>Neolithic</techLevel>
-    <ingestible>
-      <joyKind>Chemical</joyKind>
-      <joy>0.45</joy>
-      <drugCategory>Hard</drugCategory>
-      <foodType>Processed, Fluid</foodType>
-      <baseIngestTicks>80</baseIngestTicks>
-      <ingestSound>Ingest_Beer</ingestSound>
-      <ingestHoldOffsetStanding>
-        <northDefault>
-          <offset>(0.18,0,0)</offset>
-        </northDefault>
-      </ingestHoldOffsetStanding>
-      <ingestCommandString>Drink {0}</ingestCommandString>
-      <ingestReportString>Drinking {0}.</ingestReportString>
-      <useEatingSpeedStat>true</useEatingSpeedStat>
-      <chairSearchRadius>0</chairSearchRadius>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>BarkTonicHigh</hediffDef>
-          <severity>0.7</severity>
-          <toleranceChemical>BarkTonic</toleranceChemical>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetNeed">
-          <need>Rest</need>
-          <offset>0.6</offset>
-          <toleranceChemical>BarkTonic</toleranceChemical>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
-          <offset>0.15</offset>
-        </li>
-      </outcomeDoers>
-    </ingestible>
-    <recipeMaker>
-      <researchPrerequisite>DryadicAlchemy</researchPrerequisite>
-      <recipeUsers>
-        <li>GroveCrucible</li>
-      </recipeUsers>
-      <soundWorking>Recipe_Drug</soundWorking>
-      <displayPriority>1520</displayPriority>
-    </recipeMaker>
-    <costList>
-      <ComponentDryad_Clawer>4</ComponentDryad_Clawer>
-      <PsychoidLeaves>50</PsychoidLeaves>
-    </costList>
-    <comps>
-      <li Class="CompProperties_Drug">
-        <chemical>BarkTonic</chemical>
-        <addictiveness>0.054</addictiveness>
-        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
-        <needLevelOffset>0.8</needLevelOffset>
-        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
-        <listOrder>230</listOrder>
-        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
-        <largeOverdoseChance>0.005</largeOverdoseChance>
-      </li>
-    </comps>
-  </ThingDef>
+<ThingDef ParentName="DryadTonicBase">
+		<defName>Tonic_Bark</defName>
+		<label>bark tonic</label>
+		<description>A red fluid extracted from a clawer dryad's adrenal glands mixed with psychoid. Grants temporary strength and endurance to those who consume it.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/BarkTonic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>70</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Buff_Bark</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="CompProperties_UseEffectPlaySound">
+				<soundOnUsed>Ingest_Beer</soundOnUsed>
+			</li>
+			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.3</severity>
+				<scaleSeverityByToxResistance>true</scaleSeverityByToxResistance>
+			</li>
+		</comps>
+		<costList>
+			<WoodLog>30</WoodLog>
+			<ComponentDryad_Barkskin>2</ComponentDryad_Barkskin>
+		</costList>
+		<recipeMaker>
+			<workAmount>800</workAmount>
+			<researchPrerequisite>DryadicAlchemy</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
 
-<HediffDef>
-    <defName>BarkTonicHigh</defName>
-    <hediffClass>Hediff_High</hediffClass>
-    <label>high on bark tonic</label>
-    <labelNoun>a bark tonic high</labelNoun>
-    <description>Consumed bark tonic. Hardens skin.</description>
-    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.75</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-      <stages>
-        <li>
-        <statOffsets>
-          <MoveSpeed>-0.4</MoveSpeed>
-        </statOffsets>
-        <statFactors>
-          <IncomingDamageFactor>0.6</IncomingDamageFactor>
-        </statFactors>
-        </li>
-      </stages>
-  </HediffDef>
+<!-- Berrymaker Dryad -->
 
-<ThoughtDef>
-    <defName>BarkTonicHigh</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>BarkTonicHigh</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-    <stages>
-      <li>
-        <label>high on bark tonic</label>
-        <description>I can't move all that well, but I am tougher.</description>
-        <baseMoodEffect>-5</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+<!-- Medicinemaker Dryad -->
 
-<ChemicalDef>
-    <defName>BarkTonic</defName>
-    <label>bark tonic</label>
-    <addictionHediff>BarkTonicAddiction</addictionHediff>
-    <geneOverdoseChanceFactorResist>0.5</geneOverdoseChanceFactorResist>
-    <geneOverdoseChanceFactorImmune>0</geneOverdoseChanceFactorImmune>
-  </ChemicalDef>
+<!-- Woodmaker Dryad -->
 
-<NeedDef ParentName="DrugAddictionNeedBase">
-    <defName>Chemical_BarkTonic</defName>
-    <needClass>Need_Chemical</needClass>
-    <label>bark tonic</label>
-    <description>Because of a bark tonic addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
-    <fallPerDay>0.433</fallPerDay>
-    <listPriority>55</listPriority>
-  </NeedDef>
-
-<HediffDef ParentName="AddictionBase">
-    <defName>BarkTonicAddiction</defName>
-    <label>bark tonic addiction</label>
-    <description>A chemical addiction to bark tonic. Long-term presence of bark tonic has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
-\nWithout regular doses of bark tonic, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
-    <hediffClass>Hediff_Addiction</hediffClass>
-    <chemicalNeed>Chemical_BarkTonic</chemicalNeed>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.035</severityPerDay>
-        <showDaysToRecover>true</showDaysToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-      </li>
-      <li>
-        <label>withdrawal</label>
-        <painFactor>4</painFactor>
-        <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
-        <statOffsets>
-          <RestFallRateFactor>0.2</RestFallRateFactor>
-        </statOffsets>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.20</offset>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>-0.70</offset>
-          </li>
-          <li>
-            <capacity>Sight</capacity>
-            <offset>-0.20</offset>
-          </li>
-          <li>
-            <capacity>BloodPumping</capacity>
-            <offset>-0.10</offset>
-          </li>
-          <li>
-            <capacity>Manipulation</capacity>
-            <offset>-0.50</offset>
-          </li>
-        </capMods>
-        <mentalStateGivers>
-          <li>
-            <mentalState>Binging_DrugExtreme</mentalState>
-            <mtbDays>20</mtbDays>
-          </li>
-          <li>
-            <mentalState>Wander_Psychotic</mentalState>
-            <mtbDays>10</mtbDays>
-          </li>
-        </mentalStateGivers>
-      </li>
-    </stages>
-  </HediffDef>
-
-  <ThoughtDef>
-    <defName>BarkTonicWithdrawal</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>BarkTonicAddiction</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-    <stages>
-      <li>
-        <visible>false</visible>
-      </li>
-      <li>
-        <label>bark withdrawal</label>
-        <description>I am weak without the bark.</description>
-        <baseMoodEffect>-16</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
-
-<HediffDef ParentName="DrugToleranceBase">
-    <defName>BarkTonicTolerance</defName>
-    <label>bark tonic tolerance</label>
-    <description>A built-up tolerance to bark tonic. The more severe this tolerance is, the more bark tonic it takes to get the same effect.</description>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.010</severityPerDay>
-      </li>
-      <li Class="HediffCompProperties_DrugEffectFactor">
-        <chemical>BarkTonic</chemical>
-      </li>
-    </comps>
-    <hediffGivers>
-      <li Class="HediffGiver_RandomDrugEffect">
-        <hediff>ChemicalDamageModerate</hediff>
-        <severityToMtbDaysCurve>
-          <points>
-            <li>(0.45, 99999)</li>
-            <li>(0.5, 120)</li>
-            <li>(1, 90)</li>
-          </points>
-        </severityToMtbDaysCurve>
-        <partsToAffect>
-          <li>Brain</li>
-        </partsToAffect>
-      </li>
-    </hediffGivers>
-  </HediffDef>
+<!-- Gaumaker Dryad -->
 
 </Defs>
