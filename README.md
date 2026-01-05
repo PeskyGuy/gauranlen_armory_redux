@@ -66,9 +66,12 @@ From here you can research the rest of the small tech tree for the mod and creat
 - [ ] Ferritemaker: Void Fang (psy sensitivity dagger)
 
 ### Dryadic Effigies - Missing Buildings
+- [x] Clawer: Feral Effigy (produces Feral Tonic)
+- [x] Carrier: Burden Effigy (produces Burdenweave)
+- [x] Medicinemaker: Saint Effigy (produces Potent Healroot)
 - [ ] Berrymaker: Berrychurner (creates Verdant Mash)
-- [ ] Woodmaker: Deadgrove Effigy (produces Grovebark)
-- [ ] Gaumaker: Grove Effigy (produces Chlorofiber + Gauseed Extract, negative beauty)
+- [x] Woodmaker: Grove Effigy (produces Grovebark)
+- [ ] Gaumaker: Gauranlen Effigy (produces Chlorofiber + Gauseed Extract, negative beauty)
 - [ ] Gaubricmaker: Weaver Effigy (produces Gaubric)
 - [ ] Stonedigger: Digging Effigy (produces random ground resources)
 - [ ] Spitter: Spitter Turret (repurposed corpse turret)
@@ -87,17 +90,6 @@ From here you can research the rest of the small tech tree for the mod and creat
   - [ ] Ideology Dryads: Titan's Draught, Rending Claw, Bulwark's Mantle, Sanctuary Fruit, Blessing of Life, Gaiawood, Gauranlen Relic
   - [ ] VE Dryads: Blessedweave, Giant Maul, Spitfire Blaster, Serapherium
   - [ ] GA Dryads: Aurora Spire, Doomfruit, Iron Monolith, Hemovitae Draught, Cursed Blade
-
-### Missing Hediff Definitions
-- [ ] All tonic effects (sun-blessed, bloodrage, etc.)
-- [ ] All implant effects
-- [ ] Drug addiction/tolerance for new tonics
-
-### Recipe Integration
-- [ ] Add recipes to appropriate workbenches
-- [ ] Balance material costs
-- [ ] Set proper research prerequisites
-- [ ] Add skill requirements
 
 ## Completed Features
 
