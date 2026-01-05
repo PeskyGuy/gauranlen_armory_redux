@@ -82,11 +82,11 @@
 				<allowRepeatedUse>true</allowRepeatedUse>
 			</li>
 			<li Class="CompProperties_UseEffectPlaySound">
-				<soundOnUsed>Ingest_Beer</soundOnUsed>
+				<soundOnUsed>MechSerumUsed</soundOnUsed>
 			</li>
 			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
 				<hediffDef>ToxicBuildup</hediffDef>
-				<severity>0.2</severity>
+				<severity>0.1</severity>
 				<scaleSeverityByToxResistance>true</scaleSeverityByToxResistance>
 			</li>
 		</comps>
@@ -119,7 +119,7 @@
 				<allowRepeatedUse>true</allowRepeatedUse>
 			</li>
 			<li Class="CompProperties_UseEffectPlaySound">
-				<soundOnUsed>Ingest_Beer</soundOnUsed>
+				<soundOnUsed>MechSerumUsed</soundOnUsed>
 			</li>
 			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
 				<hediffDef>ToxicBuildup</hediffDef>
@@ -156,7 +156,7 @@
 				<allowRepeatedUse>true</allowRepeatedUse>
 			</li>
 			<li Class="CompProperties_UseEffectPlaySound">
-				<soundOnUsed>Ingest_Beer</soundOnUsed>
+				<soundOnUsed>MechSerumUsed</soundOnUsed>
 			</li>
 			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
 				<hediffDef>ToxicBuildup</hediffDef>

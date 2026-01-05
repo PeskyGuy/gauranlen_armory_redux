@@ -84,9 +84,9 @@
     <description>A pack of potent herbal medicine crafted by infusing healroot with vital essences extracted from medicinemaker dryads. The dryadic compounds significantly enhance the healing properties, making it nearly as effective as industrial pharmaceuticals while retaining its natural origins.</description>
     <possessionCount>3</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Resource/Medicine/MedicinePotent</texPath>
+      <texPath>Things/Item/Resource/MedicinePotent</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <drawSize>0.85</drawSize>
+      <drawSize>1</drawSize>
     </graphicData>
     <techLevel>Neolithic</techLevel>
     <statBases>

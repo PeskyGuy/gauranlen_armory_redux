@@ -93,7 +93,7 @@
     <description>A tonic with extracted from berries and berrymaker essence forming a healthy and sweet drink.</description>
     <possessionCount>10</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Resource/NutritionTonic</texPath>
+      <texPath>Things/Item/Drug/NutritionTonic</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>

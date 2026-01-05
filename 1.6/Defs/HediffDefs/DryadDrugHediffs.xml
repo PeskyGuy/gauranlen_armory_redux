@@ -5,7 +5,7 @@
 
 <HediffDef>
 		<defName>Buff_Vigor</defName>
-		<label>invigorated</label>
+		<label>Vigor Tonic</label>
 		<description>The strength of the carrier dryad is rushing through this pawn's veins.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
@@ -25,16 +25,20 @@
 				<minSeverity>0</minSeverity>
 				<statFactors>
 					<MoveSpeed>0.6</MoveSpeed>
-					<CarryingCapacity>0.8</CarryingCapacity>
 				</statFactors>
+				<statOffsets>
+					<CarryingCapacity>15</CarryingCapacity>
+				</statOffsets>
 			</li>
 			<li>
-				<label>invigorated</label>
+				<label>bolstered</label>
 				<minSeverity>0.65</minSeverity>
 				<statFactors>
 					<MoveSpeed>1.2</MoveSpeed>
-					<CarryingCapacity>1.6</CarryingCapacity>
 				</statFactors>
+				<statOffsets>
+					<CarryingCapacity>35</CarryingCapacity>
+				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>
@@ -43,7 +47,7 @@
 
 <HediffDef>
 		<defName>Buff_Feral</defName>
-		<label>enraged</label>
+		<label>Feral Tonic</label>
 		<description>The rage of the clawer dryad is rushing through this pawn's veins.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
@@ -84,7 +88,7 @@
 
 <HediffDef>
 		<defName>Buff_Bark</defName>
-		<label>enraged</label>
+		<label>Bark Tonic</label>
 		<description>The rage of the clawer dryad is rushing through this pawn's veins.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
@@ -100,23 +104,30 @@
 		</comps>
 		<stages>
 			<li>
-				<label>waning</label>
+				<label>shedding</label>
 				<minSeverity>0</minSeverity>
-				<statFactors>
-					<MeleeDamageFactor>1.1</MeleeDamageFactor>
-					<MeleeDodgeChance>1.2</MeleeDodgeChance>
-				</statFactors>
+				<statOffsets>
+					<PawnBeauty>-1</PawnBeauty>
+					<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.3</ArmorRating_Heat>
+				</statOffsets>
 			</li>
 			<li>
-				<label>enraged</label>
-				<minSeverity>1</minSeverity>
-				<statFactors>
-					<MeleeDamageFactor>1.7</MeleeDamageFactor>
-					<MeleeDodgeChance>1.4</MeleeDodgeChance>
-				</statFactors>
+				<label>reinforced</label>
+				<minSeverity>0.75</minSeverity>
 				<statOffsets>
-					<MentalBreakThreshold>0.1</MentalBreakThreshold>
+					<PawnBeauty>-2</PawnBeauty>
+					<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+					<ArmorRating_Heat>-0.5</ArmorRating_Heat>
 				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.75</postFactor>
+					</li>
+				</capMods>
 			</li>
 		</stages>
 	</HediffDef>

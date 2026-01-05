@@ -329,7 +329,7 @@
         <label>barkskin shield</label>
         <description>A shield with the mangled face of a barkskin dryad, provides decent protection against everything but heat.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/Shield/BarkskinShield/BarkskinShield</texPath>
+            <texPath>Things/Item/Equipment/Shield/BarkskinShield</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1</drawSize>
         </graphicData>
@@ -372,9 +372,9 @@
                     <li>Hands</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Things/Item/Equipment/Shield/BarkskinShield/BarkskinShield</texPath>
+                    <texPath>Things/Item/Equipment/Shield/BarkskinShield</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>1.6</drawSize>
+                    <drawSize>1.2</drawSize>
                 </offHandGraphicData>
                 <offHandHoldOffset>
                     <northDefault>
@@ -441,7 +441,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>ArrowToxic</defaultProjectile>
+        <defaultProjectile>ArrowToxicProjectile</defaultProjectile>
         <warmupTime>1.35</warmupTime>
         <range>24.9</range>
         <soundCast>Bow_Small</soundCast>
@@ -461,13 +461,23 @@
     <rotateInShelves>false</rotateInShelves>
   </ThingDef>
 
-<DamageDef ParentName="BaseProjectileNeolithic">
-    <defName>ArrowToxic</defName>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>ArrowToxicProjectile</defName>
     <label>toxic arrow</label>
     <graphicData>
       <texPath>Things/Projectile/Arrow_Toxicberry</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <projectile>
+      <speed>44</speed>
+      <damageDef>Nerve</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+    </projectile>
+  </ThingDef>
+
+<DamageDef ParentName="Arrow">
+    <defName>ArrowToxic</defName>
+    <label>toxic arrow</label>
     <additionalHediffs>
       <li>
         <hediff>ToxicBuildup</hediff>

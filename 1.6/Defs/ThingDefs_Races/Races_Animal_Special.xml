@@ -283,11 +283,11 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Dryad_Bloodmaker/DryadBloodmaker</texPath>
-          <drawSize>1.2</drawSize>
+          <drawSize>1.6</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dryad_Bloodmaker/Dessicated_DryadBloodmaker</texPath>
-          <drawSize>1.2</drawSize>
+          <drawSize>1.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
