@@ -10,7 +10,6 @@ Here you will find a basic description of the mod and an explanation on how to p
 
 From here you can research the rest of the small tech tree for the mod and create a bunch of other products from the corpses of dryads.
 
-
 # TODO List
 
 ### Rootcraft Products (High Priority)
@@ -64,8 +63,6 @@ From here you can research the rest of the small tech tree for the mod and creat
 - [ ] Ironback: Separator (heavy sword + terraferrite), Pike Thrower (rebar launcher), Aegis (tough shield)
 - [ ] Bloodmaker: Hemoferr Blade (serrated blade), Spine Launcher (vampire spine projectile)
 - [ ] Ferritemaker: Void Fang (psy sensitivity dagger)
-
-
 
 ### Living Infrastructure (New Final Tier)
 - [ ] Research: Living Infrastructure
