@@ -7,7 +7,7 @@
     <defName>Rootcraft</defName>
     <label>rootcraft</label>
     <description>Learn to process fallen dryads into useful essences and craft basic items from their remains. This ancient knowledge allows neolithic and medieval colonies to make use of dryadic materials without advanced technology.</description>
-    <baseCost>1200</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Neolithic</techLevel>
     <tab>Dryadtech</tab>
     <researchViewX>0</researchViewX>
@@ -56,12 +56,12 @@
     </requiredResearchFacilities>
   </ResearchProjectDef>
 
-  <!-- Dryadic Effigies -->
+  <!-- Living Infrastructure -->
 
   <ResearchProjectDef>
-    <defName>DryadicEffigies</defName>
-    <label>dryadic effigies</label>
-    <description>Learn to construct effigies from dryad corpses that can produce resources indefinitely. These macabre but efficient structures harness the lingering essence of fallen dryads to generate materials continuously.</description>
+    <defName>LivingInfrastructure</defName>
+    <label>living infrastructure</label>
+    <description>Learn to nurture Gauranlen seeds into functional, living structures. Grow bioluminescent lamps, self-repairing walls, and defensive spore turrets. This biological technology replaces industrial machinery with nature's own solutions.</description>
     <baseCost>4000</baseCost>
     <techLevel>Neolithic</techLevel>
     <tab>Dryadtech</tab>

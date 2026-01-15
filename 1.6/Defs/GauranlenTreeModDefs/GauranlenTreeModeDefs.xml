@@ -6,7 +6,7 @@
 <GauranlenTreeModeDef>
     <defName>Sunkeeper</defName>
     <label>sunkeeper</label>
-    <description>A small, weak caste of dryad which specializes in creating electricity from the sun. This dryad can connect to power lines and help produce power during the day, they can stay in this state for 30 days.</description>
+    <description>A small, weak caste of dryad which specializes in creating electricity from the sun. With leaves that shimmer like photovoltaic cells, this dryad basks in sunlight to generate energy, which it can channel into power conduits. It can maintain this state for 30 days.</description>
     <drawPosition>(1, 1)</drawPosition>
     <pawnKindDef>Dryad_Sunkeeper</pawnKindDef>
     <displayedStats>
@@ -23,7 +23,7 @@
 <GauranlenTreeModeDef>
     <defName>Firemaker</defName>
     <label>firemaker</label>
-    <description>A medium sized caste of dryad which specializes in producing chemfuel from nodules on its back, similar to a boomalope it also explodes on death. This dryad produces chemfuel every 10 days.</description>
+    <description>A medium sized caste of dryad which specializes in producing chemfuel from nodules on its back. Bloated with volatile fluids, it serves as a living fuel sac. Like the boomalope, its unstable biology results in a violent explosion upon death. This dryad produces chemfuel every 10 days.</description>
     <drawPosition>(1, 2)</drawPosition>
     <pawnKindDef>Dryad_Firemaker</pawnKindDef>
     <displayedStats>
@@ -41,7 +41,7 @@
 <GauranlenTreeModeDef>
     <defName>Ironback</defName>
     <label>ironback</label>
-    <description>A large sized caste of dryad which specializes in producing steel from growing formations on its back. This dryad produces steel every 10 days.</description>
+    <description>A large sized caste of dryad which specializes in producing steel from growing formations on its back. This heavy, hulking creature absorbs minerals from the soil to grow metallic protrusions that can be harvested. This dryad produces steel every 10 days.</description>
     <drawPosition>(1, 3)</drawPosition>
     <pawnKindDef>Dryad_Ironback</pawnKindDef>
     <displayedStats>
@@ -62,7 +62,7 @@
 <GauranlenTreeModeDef MayRequire="Ludeon.RimWorld.Anomaly">
     <defName>Ferritemaker</defName>
     <label>ferritemaker</label>
-    <description>A medium sized caste of dryad which specializes in producing bioferrite from crystal formations on its back. This dryad produces bioferrite every 5 days.</description>
+    <description>A medium sized caste of dryad which specializes in producing bioferrite from crystal formations on its back. Touched by the void, it groans as strange, dark crystals erupt from its bark, humming with an unsettling energy. This dryad produces bioferrite every 5 days.</description>
     <drawPosition>(1, 4)</drawPosition>
     <pawnKindDef>Dryad_Ferritemaker</pawnKindDef>
     <displayedStats>
@@ -83,7 +83,7 @@
 <GauranlenTreeModeDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>Bloodmaker</defName>
     <label>Bloodmaker</label>
-    <description>A tall spindly caste of dryad which specializes in producing hemogen from sacs near its mouth. This dryad produces hemogen every 5 days.</description>
+    <description>A tall spindly caste of dryad which specializes in producing hemogen from sacs near its mouth. Resembling a walking circulatory system, it filters blood-like nutrients to produce potent hemogen packs. This dryad produces hemogen every 5 days.</description>
     <drawPosition>(1, 5)</drawPosition>
     <pawnKindDef>Dryad_Bloodmaker</pawnKindDef>
     <displayedStats>

@@ -13,7 +13,7 @@ From here you can research the rest of the small tech tree for the mod and creat
 
 # TODO List
 
-### Rootcraft Products
+### Rootcraft Products (High Priority)
 - [ ] Sunkeeper: Sunpod (nourishing fruit + workspeed bonus), Keeperbark (building material), Sunroot (power conduit)
 - [ ] Firemaker: Chemfruit (mood buff + consciousness loss)
 - [ ] Ironback: Terraferrite (advanced material for weapons/armor)
@@ -24,7 +24,7 @@ From here you can research the rest of the small tech tree for the mod and creat
 - [ ] Spitter: Vileleather (basic leather)
 - [ ] Nectarmaker: Ambrosia extraction
 
-### Spagyric Alchemy - Missing Tonics
+### Dryadic Alchemy - Missing Tonics
 - [ ] Medicinemaker: Healing Tonic (immunity + health regen)
 - [ ] Woodmaker: Sap Tonic (manipulation, blood pumping bonuses)
 - [ ] Gaumaker: Gauseed Extract (psy sensitivity + consciousness + nausea)
@@ -65,62 +65,81 @@ From here you can research the rest of the small tech tree for the mod and creat
 - [ ] Bloodmaker: Hemoferr Blade (serrated blade), Spine Launcher (vampire spine projectile)
 - [ ] Ferritemaker: Void Fang (psy sensitivity dagger)
 
-### Dryadic Effigies - Missing Buildings
-- [x] Clawer: Feral Effigy (produces Feral Tonic)
-- [x] Carrier: Burden Effigy (produces Burdenweave)
-- [x] Medicinemaker: Saint Effigy (produces Potent Healroot)
-- [ ] Berrymaker: Berrychurner (creates Verdant Mash)
-- [x] Woodmaker: Grove Effigy (produces Grovebark)
-- [ ] Gaumaker: Gauranlen Effigy (produces Chlorofiber + Gauseed Extract, negative beauty)
-- [ ] Gaubricmaker: Weaver Effigy (produces Gaubric)
-- [ ] Stonedigger: Digging Effigy (produces random ground resources)
-- [ ] Spitter: Spitter Turret (repurposed corpse turret)
-- [ ] Nectarmaker: Nectar Effigy (spawns ambrosia)
-- [ ] Sunkeeper: Sun Shrine (solar panel + natural structure)
-- [ ] Firemaker: Chembleeder (produces Chemfuel), Everbright Lantern (free light)
-- [ ] Ironback: Geode Effigy (produces steel)
-- [ ] Bloodmaker: Bloodwrought Effigy (produces hemogen)
-- [ ] Ferritemaker: Suppressor Effigy (suppresses anomalies), Currentmaker Effigy (electricity from bioferrite)
+
+
+### Living Infrastructure (New Final Tier)
+- [ ] Research: Living Infrastructure
+- [ ] Buildings:
+  - [ ] Gauranlen Lamp (bioluminescent light)
+  - [ ] Spore Turret (organic defense)
+  - [ ] Regrowth Pod (biological bed)
+  - [ ] Root Wall (self-repairing wall)
 
 ### Awakened Essences System
 - [ ] Research: Awakened Essences (requires all previous research)
-- [ ] Building: Gauranlen Hearth (made from essences + jade + gold)
+- [ ] Building: Gauranlen Hearth (made from awakened essences + jade + gold)
 - [ ] Mechanics: Ritual system for creating awakened products
 - [ ] Awakened Products:
-  - [ ] Ideology Dryads: Titan's Draught, Rending Claw, Bulwark's Mantle, Sanctuary Fruit, Blessing of Life, Gaiawood, Gauranlen Relic
-  - [ ] VE Dryads: Blessedweave, Giant Maul, Spitfire Blaster, Serapherium
-  - [ ] GA Dryads: Aurora Spire, Doomfruit, Iron Monolith, Hemovitae Draught, Cursed Blade
+- [ ] Ideology Dryads: Titan's Draught, Rending Claw, Bulwark's Mantle, Sanctuary Fruit, Blessing of Life, Gaiawood, Gauranlen Relic
+- [ ] VE Dryads: Blessedweave, Giant Maul, Spitfire Blaster, Serapherium
+- [ ] GA Dryads: Aurora Spire, Doomfruit, Iron Monolith, Hemovitae Draught, Cursed Blade
 
-## Completed Features
+### Missing Hediff Effects
+- [ ] All tonic effects (sun-blessed, bloodrage, etc.)
+- [ ] All implant effects
+- [ ] Drug addiction/tolerance for new tonics
 
-### Dryad Races
+### Recipe Integration
+- [ ] Add recipes to appropriate workbenches
+- [ ] Balance material costs
+- [ ] Set proper research prerequisites
+- [ ] Add skill requirements
+
+### Implemented Dryad Races
 - [x] Sunkeeper (solar power + transformation)
 - [x] Firemaker (chemfuel production + explosion)
 - [x] Ironback (steel production + armor)
 - [x] Bloodmaker (hemogen production)
 - [x] Ferritemaker (bioferrite production)
 
-### Research System
+### Implemented Research
 - [x] Rootcraft
 - [x] Dryadic Alchemy  
 - [x] Essence Grafting
-- [x] Dryadic Effigies
+
 - [x] Dryadic Armaments
 - [x] Awakened Essences (framework)
 
-### Core Buildings
+### Implemented Buildings
 - [x] Rending Table (essence extraction)
 - [x] Grove Crucible (advanced crafting)
 - [x] Gau Symbiont (research facility)
 - [x] Solar Dryad Pod (sunkeeper transformation)
 
-### Basic Items
-- [x] All dryad essences (16 types)
-- [x] Basic weapons (6 weapons)
-- [x] Basic tonics (3 tonics)
-- [x] Basic implants (5 implants)
-- [x] Basic effigies (4 effigies)
-- [x] Food items (3 items)
-- [x] Textiles (Burdenweave)
-- [x] Resources (Grovebark, Potent Healroot)
-- [x] Apparel (Carrier Pack, Ward Belt)
+
+### Implemented Items
+- [x] **Essences:** 16 types (All dryad essences)
+- [x] **Weapons:** 
+  - [x] Sinew Bow (Immature)
+  - [x] Carrier Flail (Carrier)
+  - [x] Clawblade (Clawer)
+  - [x] Reapclaw (Clawer)
+  - [x] Barkskin Shield (Barkskin)
+  - [x] Poisonberry Bow (Berrymaker)
+- [x] **Tonics:**
+  - [x] Vigor Tonic (Carrier)
+  - [x] Feral Tonic (Clawer)
+  - [x] Bark Tonic (Barkskin)
+- [x] **Implants:**
+  - [x] Burden Reducer (Carrier)
+  - [x] Clawer Glands (Clawer)
+  - [x] Barkplate (Barkskin)
+  - [x] Berrymaker Pods (Berrymaker)
+  - [x] Vitality Enhancer (Medicinemaker)
+- [x] **Resources:**
+  - [x] Grovebark
+  - [x] Potent Healroot
+  - [x] Burdenweave (Textile)
+- [x] **Apparel:**
+  - [x] Carrier Pack
+  - [x] Ward Belt

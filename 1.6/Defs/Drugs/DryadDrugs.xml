@@ -68,7 +68,7 @@
 <ThingDef ParentName="DryadTonicBase">
 		<defName>Tonic_Vigor</defName>
 		<label>vigor tonic</label>
-		<description>An orange extract from carrier dryad muscle tissue mixed with psychoid. Grants temporary strength and endurance to those who consume it.</description>
+		<description>A thick, orange brew made from the heavy muscles of a carrier dryad. Soaked in psychoid, it channels the dryad's unyielding endurance into the drinker, granting the strength to haul great loads. It tastes of bitterness and deep roots.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/VigorTonic</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -105,7 +105,7 @@
 <ThingDef ParentName="DryadTonicBase">
 		<defName>Tonic_Feral</defName>
 		<label>feral tonic</label>
-		<description>A red fluid extracted from a clawer dryad's adrenal glands mixed with psychoid. Grants temporary strength and endurance to those who consume it.</description>
+		<description>A blood-red draught pressed from the heart of a clawer dryad. It stirs a beast-like fury in the blood, sharpening reflexes and driving the drinker to violence. Warriors feel the forest's hunger regarding defense.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/FeralTonic</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -142,7 +142,7 @@
 <ThingDef ParentName="DryadTonicBase">
 		<defName>Tonic_Bark</defName>
 		<label>bark tonic</label>
-		<description>A red fluid extracted from a clawer dryad's adrenal glands mixed with psychoid. Grants temporary strength and endurance to those who consume it.</description>
+		<description>A gritty, brown infusion steeped with shards of barkskin dryad shell. It hardens the drinker's flesh into a wooden callous, turning aside blades and blows. The body becomes stiff and sturdy like an old oak, slowing movement but granting immense resilience.</description>
 		<graphicData>
 			<texPath>Things/Item/Drug/BarkTonic</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
