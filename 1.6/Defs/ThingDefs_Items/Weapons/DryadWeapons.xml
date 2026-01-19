@@ -470,7 +470,7 @@
     </graphicData>
     <projectile>
       <speed>44</speed>
-      <damageDef>Nerve</damageDef>
+      <damageDef>ArrowToxic</damageDef>
       <damageAmountBase>11</damageAmountBase>
     </projectile>
   </ThingDef>
@@ -565,7 +565,7 @@
     </graphicData>
     <projectile>
       <speed>44</speed>
-      <damageDef>Nerve</damageDef>
+      <damageDef>ArrowSlowToxin</damageDef>
       <damageAmountBase>11</damageAmountBase>
     </projectile>
   </ThingDef>
