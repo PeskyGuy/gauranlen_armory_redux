@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs MayRequire="vanillaexpanded.ideo.dryads">
+
+<!-- Gaubricmaker Dryad -->
+
+<ThingDef ParentName="DryadTonicBase">
+		<defName>Tonic_Weave</defName>
+		<label>weave tonic</label>
+		<description>A fibrous brew made from the fur-like essence of a gaubricmaker dryad. It thickens the skin and stimulates hair growth, granting the drinker resistance to extreme temperatures. It tastes like hairs and soil.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/WeaveTonic</texPath> 
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>70</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Buff_Weave</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.07</severity>
+				<scaleSeverityByToxResistance>true</scaleSeverityByToxResistance>
+			</li>
+		</comps>
+		<costList>
+			<Cloth>20</Cloth>
+			<ComponentDryad_Gaubricmaker>2</ComponentDryad_Gaubricmaker>
+		</costList>
+		<recipeMaker>
+			<workAmount>800</workAmount>
+			<researchPrerequisite>DryadicAlchemy</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+<!-- Stonedigger Dryad -->
+
+<ThingDef ParentName="DryadTonicBase">
+		<defName>Tonic_Stone</defName>
+		<label>stone tonic</label>
+		<description>A gritty mineral brew distilled from the rocky essence of a stonedigger dryad. It temporarily hardens the skin into a stone-like shell, granting immense protection but slowing movement. It tastes of dust and granite.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/StoneTonic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>85</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Buff_Stone</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.25</severity>
+				<scaleSeverityByToxResistance>true</scaleSeverityByToxResistance>
+			</li>
+		</comps>
+		<costList>
+			<BlocksGranite>5</BlocksGranite>
+			<ComponentDryad_Stonedigger>2</ComponentDryad_Stonedigger>
+		</costList>
+		<recipeMaker>
+			<workAmount>800</workAmount>
+			<researchPrerequisite>DryadicAlchemy</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+<ThingDef ParentName="DryadTonicBase">
+		<defName>Tonic_Earth</defName>
+		<label>earth tonic</label>
+		<description>A mineral-rich draught made from stonedigger essence. It grants the drinker the dryad's affinity for stone and earth, making mining work feel effortless. It tastes of clay and deep caverns.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/EarthTonic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>65</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Buff_Earth</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.06</severity>
+				<scaleSeverityByToxResistance>true</scaleSeverityByToxResistance>
+			</li>
+		</comps>
+		<costList>
+			<BlocksGranite>3</BlocksGranite>
+			<ComponentDryad_Stonedigger>2</ComponentDryad_Stonedigger>
+		</costList>
+		<recipeMaker>
+			<workAmount>800</workAmount>
+			<researchPrerequisite>DryadicAlchemy</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+<!-- Spitter Dryad -->
+
+<ThingDef ParentName="DryadTonicBase">
+		<defName>Tonic_Ward</defName>
+		<label>ward tonic</label>
+		<description>A caustic brew made from the acidic glands of a spitter dryad. It coats the drinker's skin in a thin protective layer that reduces incoming damage. It tastes bitter and burns slightly going down.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/WardTonic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>75</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Buff_Ward</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.12</severity>
+				<scaleSeverityByToxResistance>true</scaleSeverityByToxResistance>
+			</li>
+		</comps>
+		<costList>
+			<Chemfuel>10</Chemfuel>
+			<ComponentDryad_Spitter>2</ComponentDryad_Spitter>
+		</costList>
+		<recipeMaker>
+			<workAmount>800</workAmount>
+			<researchPrerequisite>DryadicAlchemy</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+<!-- Nectarmaker Dryad -->
+
+<ThingDef ParentName="DryadTonicBase">
+		<defName>Tonic_Bliss</defName>
+		<label>bliss tonic</label>
+		<description>An intensely sweet brew made from concentrated nectarmaker essence. It grants overwhelming joy and contentment, but at the cost of mental clarity and awareness. It tastes like pure bliss distilled into liquid form.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/BlissTonic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>110</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Buff_Bliss</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.08</severity>
+				<scaleSeverityByToxResistance>true</scaleSeverityByToxResistance>
+			</li>
+		</comps>
+		<costList>
+			<Ambrosia>8</Ambrosia>
+			<ComponentDryad_Nectarmaker>3</ComponentDryad_Nectarmaker>
+		</costList>
+		<recipeMaker>
+			<workAmount>1000</workAmount>
+			<researchPrerequisite>DryadicAlchemy</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

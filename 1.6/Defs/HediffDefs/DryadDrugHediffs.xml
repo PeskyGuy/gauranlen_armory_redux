@@ -136,8 +136,118 @@
 
 <!-- Medicinemaker Dryad -->
 
+<HediffDef>
+		<defName>Buff_Vital</defName>
+		<label>Vital Tonic</label>
+		<description>The healing spores of the medicinemaker dryad are surging through this pawn's body, boosting immunity and tissue repair.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.25</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>waning</label>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<ImmunityGainSpeed>0.2</ImmunityGainSpeed>
+					<InjuryHealingFactor>0.4</InjuryHealingFactor>
+				</statOffsets>
+			</li>
+			<li>
+				<label>rejuvenated</label>
+				<minSeverity>0.7</minSeverity>
+				<statOffsets>
+					<ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+					<InjuryHealingFactor>1.2</InjuryHealingFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
 <!-- Woodmaker Dryad -->
 
+<HediffDef>
+		<defName>Buff_Sap</defName>
+		<label>Sap Tonic</label>
+		<description>The focused essence of the woodmaker dryad is flowing through this pawn, sharpening their diligence and work capacity.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.33</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>lucid</label>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li>
+				<label>industrious</label>
+				<minSeverity>0.6</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
 <!-- Gaumaker Dryad -->
+
+<HediffDef>
+		<defName>Buff_Sage</defName>
+		<label>Sage Tonic</label>
+		<description>The divine connection of the gaumaker dryad has expanded this pawn's consciousness.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.2</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>attuned</label>
+				<minSeverity>0</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>transcendental</label>
+				<minSeverity>0.8</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
 
 </Defs>

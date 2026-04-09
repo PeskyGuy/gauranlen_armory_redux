@@ -81,9 +81,6 @@
 				<hediffDef>Buff_Vigor</hediffDef>
 				<allowRepeatedUse>true</allowRepeatedUse>
 			</li>
-			<li Class="CompProperties_UseEffectPlaySound">
-				<soundOnUsed>MechSerumUsed</soundOnUsed>
-			</li>
 			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
 				<hediffDef>ToxicBuildup</hediffDef>
 				<severity>0.1</severity>
@@ -117,9 +114,6 @@
 			<li Class="CompProperties_UseEffectAddHediff">
 				<hediffDef>Buff_Feral</hediffDef>
 				<allowRepeatedUse>true</allowRepeatedUse>
-			</li>
-			<li Class="CompProperties_UseEffectPlaySound">
-				<soundOnUsed>MechSerumUsed</soundOnUsed>
 			</li>
 			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
 				<hediffDef>ToxicBuildup</hediffDef>
@@ -155,9 +149,6 @@
 				<hediffDef>Buff_Bark</hediffDef>
 				<allowRepeatedUse>true</allowRepeatedUse>
 			</li>
-			<li Class="CompProperties_UseEffectPlaySound">
-				<soundOnUsed>MechSerumUsed</soundOnUsed>
-			</li>
 			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
 				<hediffDef>ToxicBuildup</hediffDef>
 				<severity>0.3</severity>
@@ -174,12 +165,106 @@
 		</recipeMaker>
 	</ThingDef>
 
-<!-- Berrymaker Dryad -->
-
 <!-- Medicinemaker Dryad -->
+
+<ThingDef ParentName="DryadTonicBase">
+		<defName>Tonic_Vital</defName>
+		<label>vital tonic</label>
+		<description>A glowing, green tonic distilled from the potent regenerative spores of a medicinemaker dryad. Infused with herbal medicines, it accelerates the body's natural defense systems and mends flesh at an incredible rate. It tastes of fresh mint and life.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/VitalTonic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>150</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Buff_Vital</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.15</severity>
+				<scaleSeverityByToxResistance>true</scaleSeverityByToxResistance>
+			</li>
+		</comps>
+		<costList>
+			<MedicineHerbal>5</MedicineHerbal>
+			<ComponentDryad_Medicinemaker>2</ComponentDryad_Medicinemaker>
+		</costList>
+		<recipeMaker>
+			<workAmount>1000</workAmount>
+			<researchPrerequisite>DryadicAlchemy</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
 
 <!-- Woodmaker Dryad -->
 
+<ThingDef ParentName="DryadTonicBase">
+		<defName>Tonic_Sap</defName>
+		<label>sap tonic</label>
+		<description>A syrupy, amber liquid drawn from the concentrated heartwood of a woodmaker dryad. It sharpens focus and steadies the hands, allowing for tireless labor and efficient craftsmanship. It has a sweet, woody smell like pine resin.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/SapTonic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Buff_Sap</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.2</severity>
+				<scaleSeverityByToxResistance>true</scaleSeverityByToxResistance>
+			</li>
+		</comps>
+		<costList>
+			<PsychoidLeaves>20</PsychoidLeaves>
+			<ComponentDryad_Woodmaker>2</ComponentDryad_Woodmaker>
+		</costList>
+		<recipeMaker>
+			<workAmount>800</workAmount>
+			<researchPrerequisite>DryadicAlchemy</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
 <!-- Gaumaker Dryad -->
+
+<ThingDef ParentName="DryadTonicBase">
+		<defName>Tonic_Sage</defName>
+		<label>sage tonic</label>
+		<description>A shimmering, golden elixir containing the pure connection of a gaumaker dryad. It expands the mind and deepens awareness, connecting the drinker's thoughts to the collective wisdom of the grove. It is said to taste like starlight and ancient memories.</description>
+		<graphicData>
+			<texPath>Things/Item/Drug/SageTonic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>200</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_UseEffectAddHediff">
+				<hediffDef>Buff_Sage</hediffDef>
+				<allowRepeatedUse>true</allowRepeatedUse>
+			</li>
+			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.25</severity>
+				<scaleSeverityByToxResistance>true</scaleSeverityByToxResistance>
+			</li>
+		</comps>
+		<costList>
+			<PsychoidLeaves>30</PsychoidLeaves>
+			<ComponentDryad_Gaumaker>2</ComponentDryad_Gaumaker>
+		</costList>
+		<recipeMaker>
+			<workAmount>1200</workAmount>
+			<researchPrerequisite>DryadicAlchemy</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
 
 </Defs>
