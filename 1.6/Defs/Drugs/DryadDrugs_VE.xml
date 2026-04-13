@@ -69,38 +69,6 @@
 		</recipeMaker>
 	</ThingDef>
 
-<ThingDef ParentName="DryadTonicBase">
-		<defName>Tonic_Earth</defName>
-		<label>earth tonic</label>
-		<description>A mineral-rich draught made from stonedigger essence. It grants the drinker the dryad's affinity for stone and earth, making mining work feel effortless. It tastes of clay and deep caverns.</description>
-		<graphicData>
-			<texPath>Things/Item/Drug/EarthTonic</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>65</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_UseEffectAddHediff">
-				<hediffDef>Buff_Earth</hediffDef>
-				<allowRepeatedUse>true</allowRepeatedUse>
-			</li>
-			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
-				<hediffDef>ToxicBuildup</hediffDef>
-				<severity>0.06</severity>
-				<scaleSeverityByToxResistance>true</scaleSeverityByToxResistance>
-			</li>
-		</comps>
-		<costList>
-			<BlocksGranite>3</BlocksGranite>
-			<ComponentDryad_Stonedigger>2</ComponentDryad_Stonedigger>
-		</costList>
-		<recipeMaker>
-			<workAmount>800</workAmount>
-			<researchPrerequisite>DryadicAlchemy</researchPrerequisite>
-		</recipeMaker>
-	</ThingDef>
-
 <!-- Spitter Dryad -->
 
 <ThingDef ParentName="DryadTonicBase">
@@ -148,10 +116,30 @@
 		<statBases>
 			<MarketValue>110</MarketValue>
 		</statBases>
+		<ingestible>
+			<drugCategory>Social</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Buff_Bliss</hediffDef>
+					<severity>1.0</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Buff_Bliss_Tolerance</hediffDef>
+					<toleranceChemical>Bliss</toleranceChemical>
+					<severity>0.032</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
 		<comps>
-			<li Class="CompProperties_UseEffectAddHediff">
-				<hediffDef>Buff_Bliss</hediffDef>
-				<allowRepeatedUse>true</allowRepeatedUse>
+			<li Class="CompProperties_Drug">
+				<chemical>Bliss</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>30</listOrder>
 			</li>
 			<li Class="Pesky.CompProperties_UseEffectAddHediffWithSeverity">
 				<hediffDef>ToxicBuildup</hediffDef>

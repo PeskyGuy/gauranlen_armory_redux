@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bLgI1JxnwZU=",
+  "dgSpecHash": "lVU7y6uEa60=",
   "success": true,
-  "projectFilePath": "D:\\Coding\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
+  "projectFilePath": "F:\\Coding\\Mods\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pesky\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
     "C:\\Users\\Pesky\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.3\\microsoft.netframework.referenceassemblies.net472.1.0.3.nupkg.sha512"

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Gaubricmaker Dryad -->
+
+<HediffDef>
+		<defName>Buff_Weave</defName>
+		<label>Weave Tonic</label>
+		<description>The thick tonic is causing this pawn to be more resistant to temperatures.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.05</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>shedding</label>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+					<MoveSpeed>0.6</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<CarryingCapacity>15</CarryingCapacity>
+					<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+					<ComfyTemperatureMax>5</ComfyTemperatureMax>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+			<li>
+				<label>coated</label>
+				<minSeverity>0.65</minSeverity>
+				<statFactors>
+					<MoveSpeed>1.2</MoveSpeed>
+				</statFactors>
+				<statOffsets>
+					<CarryingCapacity>35</CarryingCapacity>
+					<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+					<ComfyTemperatureMax>10</ComfyTemperatureMax>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+<HediffDef>
+	<defName>Buff_Stone</defName>
+	<label>Stone Tonic</label>
+	<description>The tonic hardens the skin, granting resistance to damage and improving mining capabilities.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<initialSeverity>1</initialSeverity>
+	<maxSeverity>1.0</maxSeverity>
+	<isBad>false</isBad>
+	<comps>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-0.05</severityPerDay>
+			<showDaysToRecover>true</showDaysToRecover>
+		</li>
+	</comps>
+	<stages>
+		<li>
+			<minSeverity>0</minSeverity>
+			<statOffsets>
+				<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			</statOffsets>
+			<statFactors>
+				<MiningSpeed>1.2</MiningSpeed>
+				<DrillingSpeed>1.2</DrillingSpeed>
+			</statFactors>
+		</li>
+	</stages>
+</HediffDef>
+
+<HediffDef>
+	<defName>Buff_Ward</defName>
+	<label>Ward Tonic</label>
+	<description>The tonic wards off toxins and heat.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<initialSeverity>1</initialSeverity>
+	<maxSeverity>1.0</maxSeverity>
+	<isBad>false</isBad>
+	<comps>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-0.05</severityPerDay>
+			<showDaysToRecover>true</showDaysToRecover>
+		</li>
+	</comps>
+	<stages>
+		<li>
+			<minSeverity>0</minSeverity>
+			<statFactors>
+				<ToxicSensitivity>0.8</ToxicSensitivity>
+			</statFactors>
+			<statOffsets>
+				<ArmorRating_Heat>0.1</ArmorRating_Heat>
+			</statOffsets>
+		</li>
+	</stages>
+</HediffDef>
+
+<HediffDef>
+	<defName>Buff_Bliss</defName>
+	<label>Bliss Tonic</label>
+	<description>The tonic induces a state of bliss, greatly improving mood.</description>
+	<hediffClass>Hediff_High</hediffClass>
+	<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<maxSeverity>1.0</maxSeverity>
+	<isBad>false</isBad>
+	<comps>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-0.75</severityPerDay>
+			<showHoursToRecover>true</showHoursToRecover>
+		</li>
+	</comps>
+	<stages>
+		<li/>
+	</stages>
+</HediffDef>
+
+<ThoughtDef>
+	<defName>Buff_Bliss</defName>
+	<workerClass>ThoughtWorker_Hediff</workerClass>
+	<hediff>Buff_Bliss</hediff>
+	<validWhileDespawned>true</validWhileDespawned>
+	<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+	<stages>
+		<li>
+			<label>bliss tonic high</label>
+			<description>The tonic fills me with overwhelming joy and contentment.</description>
+			<baseMoodEffect>35</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
+
+<ChemicalDef>
+	<defName>Bliss</defName>
+	<label>bliss</label>
+	<addictionHediff>Buff_Bliss_Addiction</addictionHediff>
+	<toleranceHediff>Buff_Bliss_Tolerance</toleranceHediff>
+	<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	<generateAddictionGenes>false</generateAddictionGenes>
+</ChemicalDef>
+
+<NeedDef ParentName="DrugAddictionNeedBase">
+	<defName>Chemical_Bliss</defName>
+	<needClass>Need_Chemical</needClass>
+	<label>bliss</label>
+	<description>Because of a bliss addiction, this person needs to regularly consume bliss tonic to avoid withdrawal symptoms.</description>
+	<listPriority>20</listPriority>
+</NeedDef>
+
+<HediffDef ParentName="DrugToleranceBase">
+	<defName>Buff_Bliss_Tolerance</defName>
+	<label>bliss tolerance</label>
+	<description>A built-up tolerance to bliss tonic. The more severe this tolerance is, the more bliss it takes to get the same effect.</description>
+	<comps>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-0.020</severityPerDay>
+		</li>
+		<li Class="HediffCompProperties_DrugEffectFactor">
+			<chemical>Bliss</chemical>
+		</li>
+	</comps>
+</HediffDef>
+
+<HediffDef ParentName="AddictionBase">
+	<defName>Buff_Bliss_Addiction</defName>
+	<label>bliss addiction</label>
+	<description>A chemical addiction to bliss tonic. Long-term presence of bliss has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of bliss tonic, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+	<hediffClass>Hediff_Addiction</hediffClass>
+	<chemicalNeed>Chemical_Bliss</chemicalNeed>
+	<comps>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-0.1</severityPerDay>
+			<showDaysToRecover>true</showDaysToRecover>
+		</li>
+	</comps>
+	<stages>
+		<li>
+		</li>
+		<li>
+			<label>withdrawal</label>
+		</li>
+	</stages>
+</HediffDef>
+
+<ThoughtDef>
+	<defName>Buff_Bliss_Withdrawal</defName>
+	<workerClass>ThoughtWorker_Hediff</workerClass>
+	<hediff>Buff_Bliss_Addiction</hediff>
+	<validWhileDespawned>true</validWhileDespawned>
+	<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+	<stages>
+		<li>
+			<visible>false</visible>
+		</li>
+		<li>
+			<label>bliss withdrawal</label>
+			<description>I feel empty and hollow without the bliss. Everything seems dull and meaningless.</description>
+			<baseMoodEffect>-20</baseMoodEffect>
+		</li>
+	</stages>
+</ThoughtDef>
+
+</Defs>

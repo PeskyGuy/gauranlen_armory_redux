@@ -585,4 +585,164 @@
     <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
   </DamageDef>
 
+<!-- Woodmaker Dryad -->
+
+<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>MeleeWeapon_LivingwoodHammer</defName>
+    <label>livingwood hammer</label>
+    <description>A heavy hammer fashioned from the head of a woodmaker dryad. The living wood remains flexible and warm to the touch, seemingly anticipating the wielder's needs. It significantly improves the user's ability to focus on tasks, allowing them to work with greater efficiency.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/LivingwoodHammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costList>
+      <WoodLog>50</WoodLog>
+      <ComponentDryad_Woodmaker>3</ComponentDryad_Woodmaker>
+    </costList>
+    <techLevel>Neolithic</techLevel>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>3</Mass>
+    </statBases>
+    <relicChance>2</relicChance>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>DryadicArmaments</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+        <Plants>6</Plants>
+      </skillRequirements>
+      <displayPriority>520</displayPriority>
+      <recipeUsers>
+        <li>GroveCrucible</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+<!-- Gaumaker Dryad -->
+
+  <DamageDef ParentName="Flame">
+    <defName>GA_PsychicBurn</defName>
+    <label>psychic burn</label>
+    <workerClass>DamageWorker_AddHediff</workerClass>
+    <hediff>PsychicShock</hediff>
+    <additionalHediffs>
+      <li>
+        <hediff>GA_PsyResonance</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+        <victimSeverityScaling>PsychicSensitivity</victimSeverityScaling>
+      </li>
+    </additionalHediffs>
+    <deathMessage>{0} has been psychically incinerated.</deathMessage>
+  </DamageDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>GA_Projectile_PsyBlast</defName>
+    <label>psy-blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Charge_Large</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(255, 180, 50)</color>
+      <drawSize>(1.8, 1.8)</drawSize>
+    </graphicData>
+    <projectile>
+      <speed>65</speed>
+      <damageDef>GA_PsychicBurn</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <armorPenetrationBase>0.40</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>Weapon_PsyBlaster</defName>
+    <label>gauranlen psy-blaster</label>
+    <description>A formidable organic firearm grown from the concentrated essence of a gaumaker dryad. It channels the grove's collective psychic energy into massive, slow-moving bolts of golden light. Upon impact, the energy resonates through the target's nervous system, causing severe psychic burns and leaving their mind echoing with static.\n\nBeing a focus for psychic energy, it also amplifies the wielder's own psychic sensitivity.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/PsyBlaster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Small</soundInteract>
+    <costList>
+      <WoodLog>60</WoodLog>
+      <ComponentDryad_Gaumaker>4</ComponentDryad_Gaumaker>
+    </costList>
+    <statBases>
+      <WorkToMake>22000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.30</PsychicSensitivity>
+    </equippedStatOffsets>
+    <weaponTags>
+      <li>NeolithicRangedBasic</li>
+      <li>MedievalRangedDecent</li>
+    </weaponTags>
+    <recipeMaker>
+      <researchPrerequisite>DryadicArmaments</researchPrerequisite>
+      <recipeUsers>
+        <li>GroveCrucible</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+        <Plants>10</Plants>
+      </skillRequirements>
+      <displayPriority>500</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>GA_Projectile_PsyBlast</defaultProjectile>
+        <warmupTime>2.2</warmupTime>
+        <range>31.9</range>
+        <soundCast>ChargeLance_Shot</soundCast>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
 </Defs>

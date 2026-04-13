@@ -71,6 +71,7 @@
       <li>DryadicAlchemy</li>
       <li>Rootcraft</li>
       <li>Grafting</li>
+      <li>DryadicArmaments</li>
     </prerequisites>
     <requiredResearchFacilities>
       <li>Gau_Symbiont</li>
@@ -103,7 +104,7 @@
     <label>awakened essences</label>
     <description>Unlock the ultimate secrets of dryadic manipulation. Learn to work with awakened dryad essences to create incredibly powerful items and structures. This pinnacle of dryadtech requires mastery of all previous techniques and access to awakened dryads.</description>
     <baseCost>6000</baseCost>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Neolithic</techLevel>
     <tab>Dryadtech</tab>
     <researchViewX>2</researchViewX>
     <researchViewY>2</researchViewY>

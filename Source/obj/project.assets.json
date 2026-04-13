@@ -420,11 +420,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Coding\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
+      "projectUniqueName": "F:\\Coding\\Mods\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
       "projectName": "PeskysGauranlenArmoryRedux",
-      "projectPath": "D:\\Coding\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
+      "projectPath": "F:\\Coding\\Mods\\gauranlen_armory_redux\\Source\\PeskysGauranlenArmoryRedux.csproj",
       "packagesPath": "C:\\Users\\Pesky\\.nuget\\packages\\",
-      "outputPath": "D:\\Coding\\gauranlen_armory_redux\\Source\\obj\\",
+      "outputPath": "F:\\Coding\\Mods\\gauranlen_armory_redux\\Source\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pesky\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -13,7 +13,7 @@ From here you can research the rest of the small tech tree for the mod and creat
 # TODO List
 
 ### Rootcraft Products (High Priority)
-- [ ] Sunkeeper: Sunpod (nourishing fruit + workspeed bonus), Keeperbark (building material), Sunroot (power conduit)
+- [ ] Sunkeeper: Sunpod (nourishing fruit + workspeed bonus), Sunroot (power conduit)
 - [ ] Firemaker: Chemfruit (mood buff + consciousness loss)
 - [ ] Ironback: Terraferrite (advanced material for weapons/armor)
 - [ ] Bloodmaker: Hemoferrite (steel analog)
@@ -24,13 +24,13 @@ From here you can research the rest of the small tech tree for the mod and creat
 - [ ] Nectarmaker: Ambrosia extraction
 
 ### Dryadic Alchemy - Missing Tonics
-- [ ] Medicinemaker: Healing Tonic (immunity + health regen)
-- [ ] Woodmaker: Sap Tonic (manipulation, blood pumping bonuses)
-- [ ] Gaumaker: Gauseed Extract (psy sensitivity + consciousness + nausea)
-- [ ] Gaubricmaker: Fur-growth Tonic (temperature resistance)
-- [ ] Stonedigger: Stoneskin Tonic (temporary stoneskin), Earthen Tonic (mining speed)
-- [ ] Spitter: Resistance Tonic (flat damage reduction)
-- [ ] Nectarmaker: Concentrated Nectar (potent ambrosia), Bliss Tonic (mood + consciousness loss)
+- [x] Medicinemaker: Healing Tonic (immunity + health regen)
+- [x] Woodmaker: Sap Tonic (manipulation, blood pumping bonuses)
+- [x] Gaumaker: Gauseed Extract (psy sensitivity + consciousness + nausea)
+- [x] Gaubricmaker: Fur-growth Tonic (temperature resistance)
+- [x] Stonedigger: Stoneskin Tonic (temporary stoneskin), Earthen Tonic (mining speed)
+- [x] Spitter: Resistance Tonic (flat damage reduction)
+- [x] Nectarmaker: Concentrated Nectar (potent ambrosia), Bliss Tonic (mood + consciousness loss)
 - [ ] Sunkeeper: Blessed Tonic (sun-blessed hediff), Shock Tonic (workspeed + pain)
 - [ ] Firemaker: Fire Tonic (chemshine + movespeed)
 - [ ] Ironback: Steelskin Tonic (stronger stoneskin, immobilizing)
@@ -38,7 +38,7 @@ From here you can research the rest of the small tech tree for the mod and creat
 - [ ] Ferritemaker: Seer's Tonic (void study speed bonus)
 
 ### Essence Grafting - Missing Implants
-- [ ] Woodmaker: Grovebarkskin (requires barkskin implant + grovebark)
+- [ ] Woodmaker: Groveskin (beauty implant)
 - [ ] Gaumaker: Seedheart (heart implant, psy sensitivity + healing rate)
 - [ ] Gaubricmaker: Weaveskin (toughskin implant equivalent)
 - [ ] Stonedigger: Boulderskin Implant (enhanced stoneskin)
@@ -51,9 +51,9 @@ From here you can research the rest of the small tech tree for the mod and creat
 - [ ] Ferritemaker: Ferrous Heart (anomaly regen implant)
 
 ### Dryadic Armaments - Missing Weapons
-- [ ] Medicinemaker: Slow-tox Crossbow (slowing toxic arrows)
-- [ ] Woodmaker: Livingwood Hammer (consciousness bonus)
-- [ ] Gaumaker: Gauranlen Psy-blaster (psychic projectiles + hediff)
+- [x] Medicinemaker: Slow-tox Crossbow (slowing toxic arrows)
+- [x] Woodmaker: Livingwood Hammer (workspeed bonus)
+- [x] Gaumaker: Gauranlen Psy-blaster (psychic projectiles + hediff)
 - [ ] Gaubricmaker: Weaver's Whip (psy bonus)
 - [ ] Stonedigger: Digger's Maul, Stoneshield (heavy shield)
 - [ ] Spitter: Acid Launcher, Acidfang, Acid Bombs
